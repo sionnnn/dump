@@ -1,6 +1,11 @@
 #phantomcss
 >css regression testing
 
+```shell
+>npm install
+>grunt
+```
+
 * currently set to run on index.html
 * used to generate screenshots of pages/sections and compare with baseline images
 * would be useful to add to styleguide sections
