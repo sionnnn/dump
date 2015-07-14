@@ -4,6 +4,7 @@
     "devDependencies": {
         "grunt": "~0.4.1",
         "load-grunt-config": "^0.17.1",
-        "grunt-phantomcss": "git://github.com/anselmh/grunt-phantomcss.git"
+        "grunt-phantomcss": "git://github.com/anselmh/grunt-phantomcss.git",
+		"phantomjs":"latest"
     }
 }
