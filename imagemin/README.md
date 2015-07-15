@@ -2,8 +2,10 @@
 
 delete images in tests>images>min
 
+```shell
 >npm install
 >grunt
+```
 
 * generates minified versions of png,jpg,gif and svg images
 

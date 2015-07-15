@@ -1,7 +1,9 @@
 #webp
 
+```shell
 >npm install
 >grunt
+```
 
 * creates webp versions of images
 * unbelievable compression for png, very good for jpg
