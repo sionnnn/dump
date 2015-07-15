@@ -1,5 +1,10 @@
 #responsive-images
 
+delete images in tests>images>responsive
+
+>npm install
+>grunt responsive_images:myTask
+
 * creates multiple versions of images at various sizes
 * not really appropriate for cms images and sitecore handles resizing etc itself anyway
 * would need additional solution to serve appropriate image for screen size

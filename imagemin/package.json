@@ -1,0 +1,9 @@
+{
+  "name": "FINK",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "load-grunt-config": "^0.17.1",
+    "grunt-contrib-imagemin": "~0.9.4"
+  }
+}
