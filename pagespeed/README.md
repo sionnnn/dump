@@ -1,4 +1,4 @@
-#pagespeedtest
+#grunt-pagespeed
 
 * Runs the Google PageSpeed Insights tool in Grunt
 
