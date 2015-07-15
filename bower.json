@@ -1,0 +1,28 @@
+{
+  "name": "Framework",
+  "version": "0.1.0",
+  "authors": [
+    "Michael Ord <michael.ord@gmail.com>"
+  ],
+  "description": "css",
+  "main": "main",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "prettylittle-normalize": "michaelord/prettylittle-normalize",
+    "prettylittle-mixins": "michaelord/prettylittle-mixins",
+    "prettylittle-defaults": "michaelord/prettylittle-defaults",
+    "prettylittle-constants": "michaelord/prettylittle-constants",
+    "prettylittle-functions": "michaelord/prettylittle-functions",
+    "prettylittle-grids": "michaelord/prettylittle-grids",
+    "prettylittle-placeholders": "michaelord/prettylittle-placeholders"
+  }
+}
