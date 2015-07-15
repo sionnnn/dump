@@ -16,6 +16,15 @@ module.exports = function(grunt)
 	};
 
 	require('load-grunt-config')(grunt,{data: data});
+	
+	// other style things to add
+	// * sourcemaps	
+	// * csscomb
+	// * combine media queries
+	// * header/banner
+	// * css minification
+	
+	grunt.registerTask('styles', ['sass', 'postcss']);
 
-	grunt.registerTask('default', ['sass']);
+	grunt.registerTask('default', ['styles']);
 };
