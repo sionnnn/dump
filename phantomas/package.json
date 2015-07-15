@@ -1,0 +1,10 @@
+{
+  "name": "FINK-PHANTOMAS",
+  "author": "Gareth Ferguson",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-phantomas": "^0.12.0",
+    "load-grunt-config": "^0.17.1"
+  }
+}
