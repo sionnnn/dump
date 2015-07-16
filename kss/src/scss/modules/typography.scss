@@ -1,0 +1,69 @@
+/*
+Typography
+
+Basic typography
+
+Styleguide 3.0
+*/
+#body {
+	font: 100% $font-main;
+	font-size:17px;
+	line-height:21px;
+	text-align:right;
+}
+
+/*
+Headings
+
+Markup: 
+<h1>heading</h1>
+<h2>heading</h2>
+<h3>heading</h3>
+<h4>heading</h4>
+<h5>heading</h5>
+
+Styleguide 3.1
+*/
+h1 {
+  	font: 1em/0.75em $font-regular;
+    color: red;
+    
+    &:hover {
+        color: blue;
+    }
+}
+h2 {
+  	font: 1em/1em $font-regular;
+}
+h3 {
+  	font: 1em/1.21em $font-regular;
+}
+h4 {
+  	font: 1em/1.21em $font-regular;
+}
+h5 {
+  	font: 1em/1.21em $font-regular;
+}
+
+/*
+Links
+
+Links links and more links
+
+:hovered    - Highlight the button when hovered.
+:disabled   - Make the button change appearance to reflect it being disabled.
+
+Markup: 
+<a href="#link" class="{$modifiers}">Link</a>
+
+Styleguide 3.2
+*/
+
+a {
+    
+    color: red;
+    
+    &:hover {
+        color: blue;
+    }
+}
