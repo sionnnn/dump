@@ -1,0 +1,26 @@
+<header role="banner">
+
+    Page Header
+    
+    <ul>
+    <!-- Here we are taking an array that is within a partial and looping through it -->
+    {{~it.include("sitemap").pages :value:index }}
+        
+        <li>
+            <a href="{{=it.pageurl}}/{{?value.slug!="homepage"}}{{=value.slug}}{{?}}" class="page{{?it.slug == value.slug}} current{{?}}">{{=value.page}}</a>
+            
+            <!-- If statement -->
+            {{? value.children != undefined }}
+                <ul>
+                <!-- nested array -->
+                {{~value.children :child}}
+                    <li><a href="{{=it.pageurl}}/{{=value.slug}}/{{=child.slug}}">{{=child.page}}</a></li>
+                {{~}}
+                </ul>
+            {{?}}
+        </li>
+    {{~}}
+    </ul>
+    
+    
+</header>

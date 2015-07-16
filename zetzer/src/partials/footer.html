@@ -1,0 +1,21 @@
+<br/>
+<br/>
+<br/>
+<br/>
+
+<footer>  
+    Footer
+    
+    
+    
+        <ul>
+
+    {{~it.include("sitemap").articles :value:index }}
+
+            <li><a href="{{=it.pageurl}}/blog/{{=value.slug}}">{{=value.page}}</a></li>
+
+    {{~}}
+    
+        </ul>
+    
+</footer>

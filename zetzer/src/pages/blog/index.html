@@ -1,0 +1,48 @@
+{
+    "template": "default",
+    "title": "Blog - Fink",
+    "slug": "blog",
+    "date": " March 28 2012 "
+}
+
+<article role="main">
+
+    <h1>Article Name</h1>
+    <br/>
+    
+    <!-- The dot js is complied into javascript and then processed -->
+    <!-- This means we can do some basic string manipulation -->
+    
+    <date>{{= it.date.toLowerCase() }}</date>
+    <br/>
+    <date>{{= it.date.toLowerCase().replace(" ","_") }}</date>
+    <br/>
+    <date>{{= new Date(it.date) }}</date>
+    <br/>
+    <date>{{= "Year: " + new Date(it.date).getFullYear() + " Month: " + new Date(it.date).getMonth() }}</date>
+    <br/>
+    
+    
+    <date>{{=it.date}}</date>
+
+    <br/>
+    <date>{{= it.date.length }}</date>
+    <br/>
+
+    <br/>
+    <date>{{= it.date.trim() }}</date>
+    <br/>
+
+    <br/>
+    <date>Todays date: {{= new Date().getFullYear() }}</date>
+    <br/>
+
+    <br/>
+    <date>Todays date: {{= new Date().getMonth()+1 }}</date>
+    <br/>
+
+    <br/>
+    <date>Todays date: {{= new Date().getDate() }}</date>
+    <br/>
+
+</article>

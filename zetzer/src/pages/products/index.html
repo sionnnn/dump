@@ -1,0 +1,25 @@
+{
+    "template": "default",
+    "title": "Fink - Products",
+    "slug": "products"
+}
+
+<section role="main">
+
+
+    <h1>Products:</h1>
+    {{~it.include("sitemap").pages :value:index }}
+        {{?value.page == "Products"}}
+            {{? value.children != undefined }}
+                <ul>
+                {{~value.children :child}}
+                    <li><a href="{{=it.pageurl}}/{{=value.slug}}/{{=child.slug}}">{{=child.page}}</a></li>
+                {{~}}
+                </ul>
+            {{?}}            
+        {{?}}
+    {{~}}
+    
+    
+
+</section>

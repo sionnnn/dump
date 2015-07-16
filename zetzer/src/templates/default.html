@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{=it.document.title}}</title>
+    <meta name="description" content="">
+    <meta name="author" content="Toyota">
+
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    
+
+    <!-- <link href="z_core/css/global-boilerplate.css" media="screen" type="text/css" rel="stylesheet" /> -->
+    
+    <!-- <script src="z_core/js/libs/modernizr.js"></script> -->
+    
+    <style>
+        a,
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        a.current {
+
+            font-weight: bold;
+            color: red;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <!-- You can pass variables to partials easily -->
+    {{= it.include("header",{slug:it.document.slug}) }}
+    
+    
+    <!-- The actual content within the page file -->
+    {{= it.document }}
+
+    
+    {{= it.include("footer") }}
+    
+    
+
+    
+    <script>
+
+    </script>
+
+</body>
+</html>
