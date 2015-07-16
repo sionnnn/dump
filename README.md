@@ -2,11 +2,11 @@
 a place to put things
 
 ## Styleguide Generators
-* [kss](KSS)
-* [sc5-sg](Sc5 Styleguide)
+* [KSS](kss)
+* [Sc5 Styleguide](sc5-sg)
 
 ## Testing
-* [testing](Jasmine + Karma)
+* [Jasmine + Karma](testing)
 
 ## Styles
-* [styles](SASS + postcss + autoprefixer)
+* [SASS + postcss + autoprefixer](styles)
