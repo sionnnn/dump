@@ -23,6 +23,8 @@
     "prettylittle-constants": "michaelord/prettylittle-constants",
     "prettylittle-functions": "michaelord/prettylittle-functions",
     "prettylittle-grids": "michaelord/prettylittle-grids",
-    "prettylittle-placeholders": "michaelord/prettylittle-placeholders"
+    "prettylittle-placeholders": "michaelord/prettylittle-placeholders",
+    "prettylittle-elements": "michaelord/prettylittle-elements",
+    "prettylittle-typography": "michaelord/prettylittle-typography"
   }
 }

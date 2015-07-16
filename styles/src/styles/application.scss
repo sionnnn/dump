@@ -1,9 +1,39 @@
+@charset "UTF-8";
 
-body
+// include normalize before anything else, to make sure that there are no conflicts of styles
+// with the main application and the reset..
+@import "prettylittle-normalize/generic.normalize";
+
+// Core includes, variables, mixins, placeholders etc...
+// ================================================================================================
+@import "prettylittle-constants/core.constants",
+		// import project vars after constants - so we can use them, but before loading the default
+		// fallbacks.
+		"vars",
+		"prettylittle-defaults/settings.defaults",
+		"prettylittle-functions/core.functions",
+		"prettylittle-mixins/core.mixins",
+		"prettylittle-placeholders/core.placeholders";
+
+// Elements
+// ================================================================================================
+@import "prettylittle-typography/core.typography";
+
+@import "prettylittle-elements/head",
+		"prettylittle-elements/sections",
+		"prettylittle-elements/grouping",
+		"prettylittle-elements/tables",
+		"prettylittle-elements/forms",
+		"prettylittle-elements/interactive",
+		"prettylittle-elements/edits",
+		"prettylittle-elements/embedded",
+		"prettylittle-elements/text";
+
+@import "prettylittle-grids/layout.grids";
+
+.container
 {
-	border		:10px solid red;
+	max-width:$site-width;
+	margin:0 auto;
 }
 
-:fullscreen a {
-    display: flex
-}

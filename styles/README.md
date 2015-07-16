@@ -1,5 +1,22 @@
 # Styles
 
+# Installing
+
+```shell
+bower install
+```
+
+```shell
+npm install
+```
+
+## Running
+
+```shell
+grunt
+```
+
+## Notes
 Changed the config/settings into a .json file so it can be shared easily between build tools. I've done this because I strongly believe that gulp is the better of the 2 tools, so if we place the settings in an external config file it will make this easier to switch if we ever change our mind. My plan is, is to mirror the grunt build tools in gulp, to show that it is faster.
 
 The reason why the .json files I've added have a lot of additional unused info is - I'm porting my gulp scripts into grunt, and I've got quite a lot of config in there.
