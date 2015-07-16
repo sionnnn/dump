@@ -1,20 +1,20 @@
 module.exports = function(grunt) {
- 
+
   var gulp = require('gulp'),
       styleguide = require('sc5-styleguide');
- 
+
   grunt.initConfig({
- 
+
     pkg: grunt.file.readJSON('package.json'),
- 
+
     sass: {
       dist: {
         files: {
-          'main.css': 'main.scss'
+          'style.css': 'styles/style.scss'
         }
       }
     },
- 
+
     gulp: {
       'styleguide-generate': function() {
         var outputPath = 'output';
@@ -22,7 +22,8 @@ module.exports = function(grunt) {
           .pipe(styleguide.generate({
               title: 'My Styleguide',
               server: true,
-              rootPath: outputPath
+              rootPath: outputPath,
+              overviewPath:'overview.md'
             }))
           .pipe(gulp.dest(outputPath));
       },
@@ -32,7 +33,7 @@ module.exports = function(grunt) {
           .pipe(gulp.dest('output'));
       }
     },
- 
+
     watch: {
       scss: {
         files: '**/*.scss',
@@ -40,11 +41,11 @@ module.exports = function(grunt) {
       }
     }
   });
- 
+
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-gulp');
   grunt.loadNpmTasks('grunt-contrib-watch');
- 
+
   grunt.registerTask('default', ['gulp:styleguide-generate', 'gulp:styleguide-applystyles', 'watch']);
- 
+
 };
