@@ -1,0 +1,10 @@
+.svg-example {
+
+    width: 25%;
+    height: 300px;
+    
+    
+    
+    background: url(../svg/stack/svg/sprite.stack.svg#empty-heart);
+    background-size: 100% 100%;
+}
