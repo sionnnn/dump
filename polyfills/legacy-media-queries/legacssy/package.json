@@ -1,0 +1,10 @@
+{
+  "name": "Legacssy",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "load-grunt-config": "^0.17.1",
+    "grunt-legacssy": "^0.4.0"
+    
+  }
+}
