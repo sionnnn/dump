@@ -1,0 +1,43 @@
+/* here's some media queries and fun */
+
+html {
+	font-size: 100%;
+  	font-family: "Lato", sans-serif;
+
+}
+
+header {
+	display:none;
+}
+
+.col {
+	box-sizing: border-box;
+	float:left;
+	margin:0 1%;
+}
+
+@media screen and (min-width:640px) {
+
+	header {
+		display:block;
+	}
+	.col-6 {
+		width:48%;
+	}
+}
+
+
+@media screen and (min-width:1024px) {
+
+	
+	.col-6 {
+		width:22%;
+	}
+}
+
+html, body, .main, #map-canvas {
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+}
