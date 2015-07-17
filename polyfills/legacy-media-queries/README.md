@@ -7,8 +7,8 @@ Some options available:
 ------------
 *  legacssy
 *  stripmq
-*  respond.js
-------------
+*  respond.js 
+
 
 ## legacssy
 
