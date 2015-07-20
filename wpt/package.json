@@ -1,0 +1,12 @@
+{
+  "name": "FINK-WPT",
+  "author": "Gareth Ferguson",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-wpt": "^3.1.1",
+    "load-grunt-config": "^0.17.1",
+    "ngrok": "*"
+  }
+}
