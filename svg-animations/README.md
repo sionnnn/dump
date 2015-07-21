@@ -2,6 +2,7 @@
 
 ## Basic resources
 * [Codrops articles on SVG animation](http://tympanus.net/codrops/?s=svg&search-type=posts)
+* [Some benchmarking data](https://css-tricks.com/weighing-svg-animation-techniques-benchmarks/)
 
 ## SMIL / native animation
 Support is good except for IE (where it is non-existent and not planned).
