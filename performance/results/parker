@@ -1,0 +1,76 @@
+# Grunt Parker Report
+
+
+### assets/css/application.css
+
+- **Total Stylesheets:** 1
+- **Total Stylesheet Size:** 26223
+- **Total Media Queries:** 1
+- **Media Queries:**
+	- (max-width: 37.5em)
+- **Total Rules:** 189
+- **Selectors Per Rule:** 2.291005291005291
+- **Total Selectors:** 433
+- **Identifiers Per Selector:** 1.928406466512702
+- **Specificity Per Selector:** 10.4364896073903
+- **Top Selector Specificity:** 32
+- **Top Selector Specificity Selector:** dl.style-liningdt.hidden+ dd:before
+- **Total Id Selectors:** 0
+- **Total Identifiers:** 835
+- **Total Declarations:** 424
+- **Total Unique Colors:** 19
+- **Unique Colors:**
+	- `#FFFF00`
+	- `#000000`
+	- `#C0C0C0`
+	- `#222222`
+	- `#FFFFFF`
+	- `#444444`
+	- `#282828`
+	- `#C8C8C8`
+	- `#CE4844`
+	- `#17BA4D`
+	- `#0D0D0D`
+	- `#AC51B5`
+	- `#000101`
+	- `#65001C`
+	- `#EEEEEE`
+	- `#CC0000`
+	- `#C29A17`
+	- `#CC4600`
+	- `#CCCCCC`
+- **Total Important Keywords:** 0
+
+### assets/css/application_uncss.css
+
+- **Total Stylesheets:** 1
+- **Total Stylesheet Size:** 10417
+- **Total Media Queries:** 1
+- **Media Queries:**
+	- (max-width: 37.5em)
+- **Total Rules:** 39
+- **Selectors Per Rule:** 1.205128205128205
+- **Total Selectors:** 47
+- **Identifiers Per Selector:** 2.127659574468085
+- **Specificity Per Selector:** 12.808510638297872
+- **Top Selector Specificity:** 32
+- **Top Selector Specificity Selector:** input[type="range"]:focus::-webkit-slider-runnable-track
+- **Total Id Selectors:** 0
+- **Total Identifiers:** 100
+- **Total Declarations:** 115
+- **Total Unique Colors:** 13
+- **Unique Colors:**
+	- `#FFFFFF`
+	- `#444444`
+	- `#000000`
+	- `#0D0D0D`
+	- `#AC51B5`
+	- `#000101`
+	- `#65001C`
+	- `#EEEEEE`
+	- `#CC0000`
+	- `#17BA4D`
+	- `#C29A17`
+	- `#CC4600`
+	- `#CCCCCC`
+- **Total Important Keywords:** 0

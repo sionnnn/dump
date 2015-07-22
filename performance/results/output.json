@@ -1,0 +1,55 @@
+{
+    "assets/css/application.css": [{
+        "selectors": ["input[type=\"range\"]::-moz-range-track", "input[type=\"range\"]::-webkit-slider-runnable-track"],
+        "count": 8,
+        "declarations": ["animate: 0.2s", "background: #ac51b5", "border: 0px solid #000101", "border-radius: 25px", "box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d", "cursor: pointer", "height: 12.8px", "width: 100%"]
+    }, {
+        "selectors": ["meter", "progress"],
+        "count": 8,
+        "declarations": ["-moz-appearance: none", "-webkit-appearance: none", "-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset", "appearance: none", "background: #eee", "border-radius: 3px", "box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset", "height: 20px"]
+    }, {
+        "selectors": ["input[type=\"range\"]::-moz-range-thumb", "input[type=\"range\"]::-ms-thumb", "input[type=\"range\"]::-webkit-slider-thumb"],
+        "count": 7,
+        "declarations": ["background: #65001c", "border: 0px solid #000000", "border-radius: 7px", "box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d", "cursor: pointer", "height: 20px", "width: 39px"]
+    }, {
+        "selectors": ["meter", "meter::-webkit-meter-bar", "progress", "progress::-webkit-progress-bar"],
+        "count": 4,
+        "declarations": ["-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset", "background: #eee", "border-radius: 3px", "box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset"]
+    }, {
+        "selectors": ["fieldset", "input[type=\"text\"], input[type=\"email\"], input[type=\"password\"], input[type=\"search\"], input[type=\"color\"], input[type=\"date\"], input[type=\"datetime\"], input[type=\"datetime-local\"], input[type=\"month\"], input[type=\"number\"], input[type=\"tel\"], input[type=\"time\"], input[type=\"url\"], input[type=\"week\"], input[list], input[type=\"file\"], select, textarea"],
+        "count": 4,
+        "declarations": ["border: 1px solid #c8c8c8", "border-radius: 3px", "padding-left: 10px", "padding-right: 10px"]
+    }, {
+        "selectors": ["input[type=\"range\"]::-moz-range-track", "input[type=\"range\"]::-ms-track", "input[type=\"range\"]::-webkit-slider-runnable-track"],
+        "count": 4,
+        "declarations": ["animate: 0.2s", "cursor: pointer", "height: 12.8px", "width: 100%"]
+    }, {
+        "selectors": ["input[type=\"range\"]::-ms-fill-lower", "input[type=\"range\"]::-ms-fill-upper"],
+        "count": 4,
+        "declarations": ["background: #ac51b5", "border: 0px solid #000101", "border-radius: 50px", "box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d"]
+    }, {
+        "selectors": ["input[type=\"range\"]::-webkit-slider-runnable-track", "input[type=\"range\"]::-webkit-slider-thumb"],
+        "count": 3,
+        "declarations": ["-webkit-box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d", "box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d", "cursor: pointer"]
+    }, {
+        "selectors": ["iframe", "input[type=\"range\"]::-ms-track"],
+        "count": 3,
+        "declarations": ["border-left-width: 0", "border-right-width: 0", "width: 100%"]
+    }, {
+        "selectors": ["h1", "hr"],
+        "count": 3,
+        "declarations": ["-moz-column-span: all", "-webkit-column-span: all", "column-span: all"]
+    }, {
+        "selectors": ["body", "nav\nli", "nav\nul"],
+        "count": 3,
+        "declarations": ["margin-bottom: 0", "margin-top: 0", "padding: 0"]
+    }, {
+        "selectors": ["h1, h2, h3, h4, h5, h6", "ul, ol"],
+        "count": 3,
+        "declarations": ["-webkit-column-break-inside: avoid", "break-inside: avoid", "page-break-inside: avoid"]
+    }, {
+        "selectors": ["input[type=\"range\"]::-moz-range-track", "input[type=\"range\"]::-ms-fill-lower", "input[type=\"range\"]::-ms-fill-upper", "input[type=\"range\"]::-webkit-slider-runnable-track"],
+        "count": 3,
+        "declarations": ["background: #ac51b5", "border: 0px solid #000101", "box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d"]
+    }]
+}
