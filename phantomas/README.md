@@ -9,5 +9,6 @@
 * It is fast to test.
 * Great for monitoring site performance over time. I am very impressed with this - definetly recomend using it.
 
+* Look at image for example output
 
 ------
