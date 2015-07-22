@@ -1,4 +1,4 @@
-#grunt-pagespeed
+#grunt-Phantomas
 
 * Runs Phantomas performance test and produces output
 

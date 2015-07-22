@@ -1,5 +1,5 @@
 module.exports = function (grunt,data) {
 
-    grunt.registerTask('speedtest', ['phantomas']);
+    grunt.registerTask('default', ['phantomas']);
     
 };
