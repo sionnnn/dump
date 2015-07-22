@@ -1,14 +1,21 @@
 #grunt-wpt
 
-* Runs the WPT tool
+* Runs the WPT tool (http://www.webpagetest.org/)
 
 ------
 
 * Slow to test
 * Will auto load the results in a browser using contrib-connect
-* Results go into /results directory
-* Easier to read and more useful than PhantomAS. It is easy to see what resources are on the page and what is slowing things down.
 * Currently using my API key, needs a TH_NK one if we use this.
+
+* Advatage: 
+* Easier to read and more useful than PhantomAS. It is easy to see what resources are on the page and what is slowing things down.
+
+* Disadvantages:
+* Cant run against local site
+* Slow
+
+* A good option to use, but not for a local site.
 
 ------
 
