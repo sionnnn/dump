@@ -4,9 +4,14 @@
 
 ------
 
-* Currently set up to use a global grunt value 'URL', I have set this to google.co.uk. Just change this in Gruntfile.js to test another site.
-* threshold paramter can set a warning if the test score is too low
-* Is useful and worth having to do a quick test but you get more detail doing this online rather than grunt.
+* Advantage:
+* threshold parameter can set a warning if the test score is too low
+
+* Disadvantage:
+* No visual output, only will output to the console.
+* Cant test local
+
+* Is useful and worth having to do a quick test but you get more detail doing this online rather than through grunt.
 
 ------
 
