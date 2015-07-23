@@ -8,6 +8,8 @@ module.exports = function (grunt) {
     
     grunt.loadNpmTasks('grunt-csscss');
     grunt.loadNpmTasks('grunt-uncss');
+    grunt.loadNpmTasks('grunt-newer');
+    grunt.loadNpmTasks('grunt-inline-css');
 
     require('load-grunt-config')(grunt, {
         data: data

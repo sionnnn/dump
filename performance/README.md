@@ -1,3 +1,6 @@
+#Recomended:
+
+------
 
 #grunt-uncss
 
@@ -16,12 +19,31 @@
 ------
 
 
-#grunt-csscsss
+#time-grunt
 
-* Looks for duplicated css rules
-* Need to install it in Ruby with: 'gem install csscss'
+* See how long grunt tasks have taken to execute.
+* Requires no config, just 'require('time-grunt')(grunt);'
+* Very useful
+
+#grunt-newer
+
+* Only run grunt tasks when files have changed. Speeds up grunt tasks a lot, see image for reference.
 
 ------
+
+
+#Useful for some cases:
+
+
+#grunt-inline-css
+
+* Turns all CSS inline - good for emails.
+
+
+------
+
+#Not Recomended:
+
 
 #grunt-parker
 
@@ -30,9 +52,10 @@
 
 ------
 
-#time-grunt
+#grunt-csscsss
 
-* See how long grunt tasks have taken to execute.
-* Requires no config, just 'require('time-grunt')(grunt);'
-* Very useful
+* Looks for duplicated css rules
+* Need to install it in Ruby with: 'gem install csscss'
+
+------
 
