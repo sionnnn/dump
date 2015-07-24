@@ -50,16 +50,16 @@ Suggest these are stored in seperate JS files and called when required, similar 
 
 It is then possible to use [yepnope syntax to load](http://modernizr.com/docs/#load) polyfills etc if required. Though this is being [deprecated](https://github.com/SlexAxton/yepnope.js#deprecation-notice) in favour of amd style systems.
 
-###With Require.js
+###Modernizr with Require.js
 
 Once the grunt file is created we can then use the resulting Modernizr build like any other AMD dependency whenever we need it, [this comes from stu cox](https://github.com/Modernizr/Modernizr/issues/1017) who actually wrote modernizr
 
 <code>
-define(['build/modernizr.custom.js'], function (Modernizr) {  
-    if (Modernizr.svg) {  
-        ...  
-    }  
-});  
+define(['build/modernizr.custom.js'], function (Modernizr) {
+    if (Modernizr.svg) {
+        ...
+    }
+});
 </code>
 
 or use a shim config
@@ -75,7 +75,9 @@ requirejs.config({
         	}  
     	}  
 })  
+</code>
 
+<code>
 define(['Modernizr'],function(Modernizr) {
     'use strict';
     
@@ -87,3 +89,18 @@ define(['Modernizr'],function(Modernizr) {
 }
 </code>
 
+Others say you should still define modernizr in the head so it is available to your CSS then define it to require as below:
+
+define('modernizr', [], Modernizr);
+
+With Modernizr now available, you could do things like:
+
+require(['modernizr'], function(modernizr) {
+  if(!Modernizr.css_vhunit || !Modernizr.css_vwunit) {
+    // code here
+  }
+});
+
+####Finally
+
+There's also talk of a [Modernizr plugin for requireJS](https://github.com/stucox/require-modernizr), this is just an idea at present though.
