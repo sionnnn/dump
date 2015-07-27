@@ -4,10 +4,35 @@
             expand: true,
             cwd: 'css/icons/source',
             src: ['*.svg', '*.png'],
-            dest: "css/icons"
+            dest: 'css/icons'
         }],
         options: {
             enhanceSVG: true
         }
     }
 }
+
+
+
+//potential mixin application if using sass - may be abit overkill and i've not tested it
+
+/*
+ * 
+ 
+ module.exports = {
+    myIcons: {
+        files: [{
+            expand: true,
+            cwd: 'sass/icons/source',
+            src: ['*.svg', '*.png'],
+            dest: 'sass/icons'
+        }],
+        options: {
+            datasvgcss: 'icons.data.svg.scss', //default 'icons.data.svg.css'
+            cssprefix: '@mixin icon-' //default 'icon-'
+        }
+    }
+}
+
+ * 
+ */
