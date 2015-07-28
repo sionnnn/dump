@@ -33,17 +33,19 @@ from npm page:  "grunticon is a Grunt.js task that makes it easy to manage icons
 * Non-JavaScript environments
 
 
-Pros:
+###Pros:
 
 * Handles more than we likely need
 * You have the option to render svgs as in embeded elements rather than background images.  Giving more flexibility in colouring / transforming etc.
 * Source images can be both SVG and PNG.
 * Nice use of base64 encoding rather than a sprite sheet.
+* Can split task into seperate sections... myIcons is defined in the included example.  You could also include sections for background images if needed.
 
 
-Cons:
+###Cons:
 
 * There is a small javascript snippet placed in the head of the document which decides which style sheet to display.
 
-
-Need to do a comparison between this and svg_sprite
+####Notes:
+* svgmin should be used as a precursor to grunticon.
+* Need to do a comparison between this and svg_sprite
