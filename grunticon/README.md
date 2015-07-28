@@ -66,4 +66,5 @@ from npm page:  "grunticon is a Grunt.js task that makes it easy to manage icons
 
 ####Further Reading
 
-* 
+* [Getting started with Grunticon](http://blog.iconfinder.com/get-started-with-grunticon/)
+* [Example showing all config options](https://raw.githubusercontent.com/filamentgroup/grunticon/master/Gruntfile.js)

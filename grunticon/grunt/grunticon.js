@@ -7,7 +7,8 @@
             dest: '<%= paths.icons.root %>'
         }],
         options: {
-            enhanceSVG: true
+            enhanceSVG: true,
+            compressPNG: true
         }
     }
 }
