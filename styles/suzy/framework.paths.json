@@ -1,0 +1,54 @@
+{
+	"assets" :
+	{
+		"styles" :
+		{
+			"dir"		:"src/styles",
+			"files"		:""
+		},
+		"scripts" :
+		{
+			"dir"		:"src/js",
+			"files"		:[
+				"src/js/*.js"
+			]
+		},
+		"img" :
+		{
+			"dir"		:"src/media",
+			"files"		:"src/media/**/*",
+			"png"		:"src/media/**/*.png",
+			"jpg"		:"src/media/**/*.jpg",
+			"gif"		:"src/media/**/*.gif",
+			"svg"		:"src/media/**/*.svg",
+			"ico"		:"src/media/**/*.ico"
+		},
+		"font" :
+		{
+			"files"		:"src/font/*.svg"
+		},
+		"icons" :
+		{
+			"files"		:"src/icons/*.svg"
+		},
+		"templates" :
+		{
+			"data"		:"./src/templates/data",
+			"helpers"	:"./src/templates/helpers/*.js",
+			"partials"	:"./src/templates/partials/**/*.hbs",
+			"masters"	:"./src/templates/masters",
+			"pages"		:"./src/templates/pages/*.html"
+		}
+	},
+	"public" : {
+		"styles"		:"assets/css",
+		"scripts"		:"assets/js",
+		"img"			:"assets/media",
+		"font"			:"assets/webfont",
+		"icons"			:"assets/icons",
+		"templates"		:"templates-html"
+	},
+	"hash" : {
+		"dir"			: ""
+	}
+}

@@ -1,0 +1,59 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Helvetica, Arial;
+  color: #fff;
+  font-size: 1em;
+  padding: 1em;
+}
+
+main {
+  max-width: 64em;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-size: 8.4745762712%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
+
+main:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+header {
+  background: #33436E;
+  margin-bottom: 1.6949152542%;
+}
+
+article {
+  background: #6D90EE;
+  width: 74.5762711864%;
+  float: left;
+  margin-right: 1.6949152542%;
+  margin-bottom: 1.6949152542%;
+}
+
+aside {
+  background: #545B6E;
+  width: 23.7288135593%;
+  float: right;
+  margin-right: 0;
+}
+
+/* Footer */
+footer {
+  background: #545B6E;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+}
