@@ -1,0 +1,47 @@
+@import "../../bower_components/susy/sass/susy";
+
+$susy: (
+  global-box-sizing: border-box,
+  columns: 12,
+  container: 64em,
+  gutters: 1/4,
+  debug: (image: show)
+);
+
+$container-style: fluid;
+@include border-box-sizing;
+
+*{
+    font-family: Helvetica, Arial;
+    color:#fff;
+    font-size: 1em;
+    padding: 1em;
+}
+
+main{
+   @include container;
+}
+
+header{
+    background:#33436E;
+    margin-bottom: gutter();
+}
+
+article{
+    background: #6D90EE;
+    @include span(9); 
+    margin-bottom: gutter();
+}
+
+aside{
+    background: #545B6E;
+    @include span(3 last); 
+}
+
+/* Footer */
+
+footer{
+    background: #545B6E;
+    @include span(12);
+    clear: both;
+}
