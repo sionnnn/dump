@@ -2,9 +2,9 @@
     myIcons: {
         files: [{
             expand: true,
-            cwd: 'css/icons/source',
-            src: ['*.svg', '*.png'],
-            dest: 'css/icons'
+            cwd: '<%= paths.icons.root %>',
+            src: ['opt/*.svg', 'raw/*.png'],
+            dest: '<%= paths.icons.root %>'
         }],
         options: {
             enhanceSVG: true

@@ -1,6 +1,20 @@
 #GRUNT-GRUNTICON
+```
+         /'
+        //
+    .  //
+    |\//7
+   /' " \
+  .   . .
+  | (    \
+  |  '._  '
+  /    \'-'
+```
+
 
 [www.npmjs.com/package/grunt-grunticon](https://www.npmjs.com/package/grunt-grunticon)
+
+[www.grunticon.com](http://www.grunticon.com/) -> the animated examples are nice!
 
 from npm page:  "grunticon is a Grunt.js task that makes it easy to manage icons and background images for all devices, preferring HD (retina) SVG icons but also provides fallback support for standard definition browsers, and old browsers alike. From a CSS perspective, it's easy to use, as it generates a class referencing each icon, and doesn't use CSS sprites."
 
@@ -49,3 +63,7 @@ from npm page:  "grunticon is a Grunt.js task that makes it easy to manage icons
 ####Notes:
 * svgmin should be used as a precursor to grunticon.
 * Need to do a comparison between this and svg_sprite
+
+####Further Reading
+
+* 
