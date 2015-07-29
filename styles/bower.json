@@ -17,14 +17,17 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "prettylittle-normalize": "michaelord/prettylittle-normalize",
-    "prettylittle-mixins": "michaelord/prettylittle-mixins",
-    "prettylittle-defaults": "michaelord/prettylittle-defaults",
     "prettylittle-constants": "michaelord/prettylittle-constants",
+    "prettylittle-defaults": "michaelord/prettylittle-defaults",
+    "prettylittle-elements": "michaelord/prettylittle-elements",
+    "prettylittle-forms": "michaelord/prettylittle-forms",
     "prettylittle-functions": "michaelord/prettylittle-functions",
     "prettylittle-grids": "michaelord/prettylittle-grids",
+    "prettylittle-mixins": "michaelord/prettylittle-mixins",
+    "prettylittle-navigation": "michaelord/prettylittle-navigation",
+    "prettylittle-normalize": "michaelord/prettylittle-normalize",
     "prettylittle-placeholders": "michaelord/prettylittle-placeholders",
-    "prettylittle-elements": "michaelord/prettylittle-elements",
-    "prettylittle-typography": "michaelord/prettylittle-typography"
+    "prettylittle-typography": "michaelord/prettylittle-typography",
+    "prettylittle-utility": "michaelord/prettylittle-utility"
   }
 }
