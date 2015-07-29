@@ -59,6 +59,7 @@ from npm page:  "grunticon is a Grunt.js task that makes it easy to manage icons
 ###Cons:
 
 * There is a small javascript snippet placed in the head of the document which decides which style sheet to display.
+* Can lead to quite large css files.  29 pngs and 35 svgs.  icons.data.svg.css = 337kb. icons.data.png.css = 535kb.
 
 ####Notes:
 * svgmin should be used as a precursor to grunticon.
