@@ -1,6 +1,6 @@
 @import "styleguide_variables";
 
-$test-variable: 30px;
+$test-variable: green;
 
 // First section
 //
@@ -11,6 +11,7 @@ $test-variable: 30px;
 
 .section {
   color: $color-red;
+  background: $test-variable;
 }
 .section:hover {
   color: $color-green;

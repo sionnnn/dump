@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
   var gulp = require('gulp'),
+      gsass = require('gulp-sass'),
       styleguide = require('sc5-styleguide');
 
   grunt.initConfig({
@@ -10,7 +11,8 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'style.css': 'styles/style.scss'
+          'main.css': 'main.scss',
+          'output/styleguide.css': 'output/main.scss'
         }
       }
     },
@@ -28,10 +30,13 @@ module.exports = function(grunt) {
           .pipe(gulp.dest(outputPath));
       },
       'styleguide-applystyles': function() {
-        gulp.src('main.scss')
+        return gulp.src('main.css')
+          .pipe(gsass({
+            errLogToConsole: true
+          }))
           .pipe(styleguide.applyStyles())
           .pipe(gulp.dest('output'));
-      }
+          }
     },
 
     watch: {

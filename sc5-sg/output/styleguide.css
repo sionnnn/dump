@@ -1,0 +1,21 @@
+.section {
+  color: #ff0000;
+  background: green; }
+
+.section:hover {
+  color: #00ff00; }
+
+.section:active {
+  color: #0000ff; }
+
+.test-css {
+  color: purple; }
+
+.section1 {
+  color: #ff0000; }
+
+.section2 {
+  background-color: #00ff00; }
+
+.section3 {
+  border: 1px solid #0000ff; }

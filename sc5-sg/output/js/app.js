@@ -568,7 +568,7 @@ angular.module('sgApp')
 'use strict';
 
 angular.module('sgApp')
-  .directive('dynamicCompile', ["$compile", "$parse", function($compile, $parse) {
+  .directive('dynamicCompile', ["$compile", "$parse", "$window", function($compile, $parse, $window) {
     return {
       link: function(scope, element, attrs) {
         var parsed = $parse(attrs.ngBindHtml);
@@ -576,6 +576,17 @@ angular.module('sgApp')
         // Recompile if the template changes
         scope.$watch(getStringValue, function() {
           $compile(element, null, 0)(scope);
+          // Emit an event that an element is rendered
+          element.ready(function() {
+            var event = new CustomEvent('styleguide:onRendered', {
+              detail: {
+                elements: element
+              },
+              bubbles: true,
+              cancelable: true
+            });
+            $window.dispatchEvent(event);
+          });
         });
       }
     };
@@ -629,18 +640,6 @@ angular.module('sgApp')
         // We want to run updateCurrentReference after digest is complete
         $timeout(function() {
           updateCurrentReference();
-        });
-
-        // Emit an event that an element is rendered
-        element.ready(function() {
-          var event = new CustomEvent('styleguide:onRendered', {
-            detail: {
-              elements: element
-            },
-            bubbles: true,
-            cancelable: true
-          });
-          $window.dispatchEvent(event);
         });
       }
     };

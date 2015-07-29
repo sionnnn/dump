@@ -2660,6 +2660,12 @@ Styleguide 4.4
   .sg-navigation-section .next-nav, .sg-navigation-section .prev-nav {
     float: left;
     cursor: pointer; }
+  .sg-navigation-section .sg-navigation-link,
+  .sg-navigation-section .sg-navigation-link:link,
+  .sg-navigation-section
+.sg-navigation-link:visited {
+    color: #1695A3;
+    text-decoration: none; }
 
 .sg.disconnection-icon {
   line-height: 32px;
