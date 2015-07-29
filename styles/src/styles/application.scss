@@ -15,30 +15,16 @@
 		"prettylittle-mixins/mixin.all",
 		"prettylittle-placeholders/core.placeholders";
 
-// Elements
-// ================================================================================================
-@import "prettylittle-typography/core.typography";
-
 @import "prettylittle-elements/head",
-		"prettylittle-elements/links",
 		"prettylittle-elements/sections",
-		"prettylittle-elements/grouping",
-		"prettylittle-elements/tables",
-		"prettylittle-elements/forms",
-		"prettylittle-elements/interactive",
+		"prettylittle-elements/links",
 		"prettylittle-elements/edits",
+		"prettylittle-elements/tables",
+		"prettylittle-elements/text",
+		"prettylittle-elements/grouping",
 		"prettylittle-elements/embedded",
-		"prettylittle-elements/text";
-
-//
-@import "prettylittle-navigation/core.navigation",
-		"prettylittle-navigation/core.bullet",
-		"prettylittle-navigation/core.pagination",
-		"prettylittle-navigation/core.prev-next",
-		"prettylittle-navigation/core.breadcrumb",
-		"prettylittle-navigation/core.multilevel";
-
-// http://codepen.io/siiron/pen/kHdlp
+		"prettylittle-elements/interactive",
+		"prettylittle-elements/forms";
 
 // I've listened to talks where people say it's best to add utility classes to the end of the CSS file.. DONE. :)
 @import "prettylittle-utility/core.utility";
