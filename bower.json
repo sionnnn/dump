@@ -10,7 +10,7 @@
   "private": true,
   "ignore": [
     "**/.*",
-    "./!(fink-constants\/*.scss)",
+    "./fink-constants/!(*.scss)",
     "node_modules",
     "bower_components",
     "test",
