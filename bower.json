@@ -9,13 +9,9 @@
   "license": "MIT",
   "private": true,
   "ignore": [
-    "**/.*",
-    "**/",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests",
-    ["./!(*.scss)"]
+    "*",
+    "!modules/",
+    "!modules/*"
   ],
   "main":[
     "modules/fink-constants/_core.constants.scss"
