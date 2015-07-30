@@ -14,7 +14,7 @@
   ],
   "main": [
     "./modules/constants/_core.constants.scss",
-    "./modules/constants/_settings.defaults.scss"
+    "./modules/defaults/_settings.defaults.scss"
   ],
   "dependencies": {
   },
