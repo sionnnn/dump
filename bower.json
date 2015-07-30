@@ -16,7 +16,7 @@
     "test",
     "tests"
   ],
-  "main":[]
+  "main":[
     "modules/fink-constants/_core.constants.scss"
   ],
   "dependencies": {
