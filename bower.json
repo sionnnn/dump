@@ -10,15 +10,11 @@
   "private": true,
   "ignore": [
     "*",
-    "!modules/",
-    "!modules/constants/*.scss",
-    "!modules/defaults/*.scss",
-    "!modules/elements/*.scss",
-    "!modules/functions/*.scss",
-    "!modules/mixins/*.scss",
-    "!modules/normalize/*.scss",
-    "!modules/placeholders/*.scss",
-    "!modules/utility/*.scss"
+    "!modules/"
+  ],
+  "main": [
+    "./modules/constants/_core.constants.scss",
+    "./modules/constants/_settings.defaults.scss"
   ],
   "dependencies": {
   },
