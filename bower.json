@@ -15,12 +15,9 @@
   "main": [
     "./modules/constants/_core.constants.scss",
     "./modules/defaults/_settings.defaults.scss",
-    "./modules/elements/*.scss",
-    "./modules/functions/*.scss",
-    "./modules/mixins/*.scss",
-    "./modules/normalize/*.scss",
-    "./modules/placeholders/*.scss",
-    "./modules/utility/*.scss"
+    "./modules/normalize/_generic.normalize.scss",
+    "./modules/placeholders/_core.placeholders.scss",
+    "./modules/utility/_core.utility.scss"
   ],
   "dependencies": {
   },
