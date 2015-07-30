@@ -12,10 +12,7 @@
     "*",
     "!modules/",
     "!modules/*",
-    "!modules/**/*"
-  ],
-  "main":[
-    "modules/constants/_core.constants.scss"
+    "!modules/**/*.scss"
   ],
   "dependencies": {
   },
