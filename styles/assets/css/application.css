@@ -423,115 +423,6 @@ button:active, input[type="button"]:active, input[type="submit"]:active, input[t
 }
 
 /*
-@if(type-of($type-scale) == number)
-{
-	@warn "NUMBER";
-}
-@else if(type-of($type-scale) == map)
-{
-	@warn "MAP";
-}
-*/
-.typl8-tera, .typl8-giga, .typl8-mega, h1, .typl8-alpha, h2, .typl8-beta, h3, .typl8-gamma, h4, .typl8-delta, h5, .typl8-epsilon, .typl8-zeta, h6 {
-  text-rendering: optimizeLegibility;
-  line-height: 1;
-  margin-top: 0;
-  color: #222;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #222;
-  font-family: Arial, sans-serif;
-  -webkit-column-break-inside: avoid;
-     page-break-inside: avoid;
-          break-inside: avoid;
-}
-
-h1
-a
-, h2
-a
-, h3
-a
-, h4
-a
-, h5
-a
-, h6
-a {
-  text-decoration: none;
-}
-
-h1 {
-  -webkit-column-span: all;
-     -moz-column-span: all;
-          column-span: all;
-}
-
-.typl8-tera {
-  font-size: 41px;
-  font-size: 2.565784514rem;
-  margin-bottom: 24px;
-  margin-bottom: 1.5550209175rem;
-}
-
-.typl8-giga {
-  font-size: 36px;
-  font-size: 2.2806973457rem;
-  margin-bottom: 22px;
-  margin-bottom: 1.3822408156rem;
-}
-
-.typl8-mega, h1 {
-  font-size: 32px;
-  font-size: 2.0272865295rem;
-  margin-bottom: 19px;
-  margin-bottom: 1.2286585028rem;
-}
-
-.typl8-alpha, h2 {
-  font-size: 28px;
-  font-size: 1.8020324707rem;
-  margin-bottom: 17px;
-  margin-bottom: 1.0921408913rem;
-}
-
-.typl8-beta, h3 {
-  font-size: 25px;
-  font-size: 1.6018066406rem;
-  margin-bottom: 15px;
-  margin-bottom: 0.9707919034rem;
-}
-
-.typl8-gamma, h4 {
-  font-size: 22px;
-  font-size: 1.423828125rem;
-  margin-bottom: 13px;
-  margin-bottom: 0.8629261364rem;
-}
-
-.typl8-delta, h5 {
-  font-size: 20px;
-  font-size: 1.265625rem;
-  margin-bottom: 12px;
-  margin-bottom: 0.7670454545rem;
-}
-
-.typl8-epsilon {
-  font-size: 18px;
-  font-size: 1.125rem;
-  margin-bottom: 10px;
-  margin-bottom: 0.6818181818rem;
-}
-
-.typl8-zeta, h6 {
-  font-size: 14px;
-  font-size: 0.8888888889rem;
-  margin-bottom: 8px;
-  margin-bottom: 0.5387205387rem;
-}
-
-/*
 html
 
 The html element represents the root of an HTML document.
@@ -546,13 +437,11 @@ html {
   -ms-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font: normal 100%/1.65 Arial, sans-serif;
-}
-
-@media (max-width: 37.5em) {
-  html {
-    font-size: 100%;
-  }
+  /*
+	@media (max-width: 37.5em)
+	{
+		font-size				:100%;
+	}*/
 }
 
 html {
@@ -572,30 +461,6 @@ html {
 }
 
 /*
-a
-
-If the a element has an href attribute, then it represents a hyperlink (a hypertext anchor). If the a element has no href attribute, then the element represents a placeholder for where a link might otherwise have been placed, if it had been relevant.
-The target, rel, media, hreflang, and type attributes must be omitted if the href attribute is not present.
-
-Markup:
-<a href="http://html5doctor.com/author/jacko/">Jack Osborne</a>
-
-Styleguide 0.0
-*/
-a {
-  color: red;
-  text-decoration: none;
-}
-
-a:hover, a:focus {
-  text-decoration: underline;
-}
-
-a:before, a:after {
-  text-decoration: none;
-}
-
-/*
 body
 
 The body element represents the main content of the document.
@@ -608,9 +473,7 @@ body {
   font-weight: 400;
   text-rendering: optimizeLegibility;
   height: 100%;
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #444;
+  color: #333;
 }
 
 /*
@@ -717,6 +580,459 @@ he HTML5 Doctor is run by the following group of volunteers:
 	<a href="http://html5doctor.com/author/remys">Remy Sharp</a>,
 	<a href="http://html5doctor.com/author/olib">Oli Studholme</a>
 </address>
+
+Styleguide 0.0
+*/
+/*
+a
+
+If the a element has an href attribute, then it represents a hyperlink (a hypertext anchor). If the a element has no href attribute, then the element represents a placeholder for where a link might otherwise have been placed, if it had been relevant.
+The target, rel, media, hreflang, and type attributes must be omitted if the href attribute is not present.
+
+Markup:
+<a href="http://html5doctor.com/author/jacko/">Jack Osborne</a>
+
+Styleguide 0.0
+*/
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+a:before, a:after {
+  text-decoration: none;
+}
+
+/*
+del
+
+DEL
+The del element represents a removal from the document. Thedel elements should not cross implied paragraph boundaries
+
+Markup:
+<p>My favourite colour is <del datetime="2010-10-11T01:25-07:00">blue</del> <ins datetime="2010-10-11T01:25-07:01">red</ins>, but I also like green and yellow.</p>
+
+Styleguide 0.0
+*/
+/*
+ins
+
+The ins element represents an addition to the document. The ins elements should not cross implied paragraph boundaries.
+
+Markup:
+<p>My favourite colour is <del datetime="2010-10-11T01:25-07:00">blue</del> <ins datetime="2010-10-11T01:25-07:01">red</ins>, but I also like green and yellow.</p>
+
+Styleguide 0.0
+*/
+/*
+table
+
+The table element represents data with more than one dimension, in the form of a table. Tables must not be used as layout aids.
+
+Markup:
+<table>
+	<tr>
+		<th scope="col">dog</th>
+		<th scope="col">cat</th>
+		<th scope="col">horse</th>
+		<th scope="col">iguana</th>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>2</td>
+		<td>10</td>
+		<td>500</td>
+	</tr>
+</table>
+
+Styleguide 0.0
+*/
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 0 5px;
+}
+
+[colspan] {
+  text-align: center;
+}
+
+[colspan="1"] {
+  text-align: left;
+}
+
+[rowspan] {
+  vertical-align: middle;
+}
+
+[rowspan="1"] {
+  vertical-align: top;
+}
+
+.cell-numerical {
+  text-align: right;
+}
+
+/**
+ * Allow the ability to either set a border on all tables by default, or use a special class
+ * to apply the borders.
+ */
+th, td {
+  border: 1px solid #eee;
+}
+
+th:empty
+, td:empty {
+  border: 0;
+}
+
+thead
+tr:last-child
+th {
+  border-bottom-width: 2px;
+}
+
+tbody
+tr
+th:nth-of-type {
+  border-right-width: 2px;
+}
+
+tbody
+tr:nth-of-type(odd) {
+  background-color: #eee;
+}
+
+/*
+em
+
+Represents stress emphasis of its contents. The level of emphasis that a particular piece of content has is given by its number of ancestor em elements. The 'stress' being referred to is linguistic. If spoken, this stress would be emphasised pronunciation on a word that can change the nuance of a sentence.
+
+Markup:
+<p>Call a doctor <em>now</em></p>
+
+Styleguide 0.0
+*/
+/*
+strong
+
+Represents strong importance for its contents. Indicate relative importance by nesting strong elements; each strong element increases the importance of its contents. Changing the importance of a piece of text with the strong element does not change the meaning of the sentence.
+
+Markup:
+<p><strong>Warning</strong>. This dungeon is dangerous. <strong>Avoid the ducks.</strong> Take any gold you find.</p>
+
+Styleguide 0.0
+*/
+/*
+i
+
+Represents a span of text in an alternate voice or mood, or otherwise offset from the normal prose, such as a taxonomic designation, a technical term, an idiomatic phrase from another language, a thought, a ship name, or some other prose whose typical typographic presentation is italicized.
+Only use i when nothing more suitable is available — e.g., em for text with stress emphasis, strong for text with semantic importance, cite for titles in a citation or bibliography, dfn for defining a word, and var for mathematical variables.
+
+Markup:
+<p>The term <i>prose content</i> is defined above.
+<i class="taxonomy">Nanotyrannus</i> ("dwarf tyrant") is a genus of tyrannosaurid dinosaur, and is possibly a juvenile specimen of <i class="taxonomy">Tyrannosaurus</i>.</p>
+
+Styleguide 0.0
+*/
+/*
+b
+
+Represents a span of text to be stylistically offset from the normal prose without conveying any extra importance. Examples are key words in a document abstract, product names in a review, or other spans of text whose typical typographic presentation is bold.
+The b element should be used as a last resort when no other element is more appropriate. In particular, headings should use the h1 to h6 elements, stress emphasis should use the em element, importance should be denoted with the strong element, and text marked or highlighted should use the mark element.
+
+Markup:
+<p><b class="character">Deckard</b>: <i class="voiceover">The report would be routine retirement of a replicant which didn't make me feel any better about shooting a woman in the back. There it was again. Feeling, in myself. For her, for Rachael.</i></p>
+
+Styleguide 0.0
+*/
+/*
+u
+
+The <code>u</code> element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation (when you are annotating something, but not explicitly saying what it is). Examples include indicating misspelt words, labeling proper names in traditional Chinese prose, or indicating a family name when the name’s order is non-western
+
+Markup:
+<span itemscope itemtype="http://schema.org/Person" lang="ja-latn">
+	<u itemprop="familyName">Son</u> <span itemprop="givenName">Goku</span>
+</span>
+
+Styleguide 0.0
+*/
+/*
+s
+
+The <code>s</code> element represents contents that are no longer accurate or no longer relevant.
+
+Markup:
+<p>Sale on now!</p>
+<p><s>Get up to 25% off</s></p>
+<p><strong>Now down to 50% off</strong></p>
+
+Styleguide 0.0
+*/
+/*
+small
+
+Represents side comments such as small print. It is not intended to be presentational. The small element should not be used for extended spans of text such as multiple paragraphs, lists, or sections of text. It is only intended for short runs of text.
+
+Markup:
+<footer>
+	<address>
+		For more details, contact
+		<a href="mailto:hello@html5doctor.com">HTML5 Doctor</a>.
+	</address>
+	<small>&copy; copyright HTML5 Doctor. </small>
+</footer>
+
+Styleguide 0.0
+*/
+small {
+  font-size: 85%;
+}
+
+/*
+abbr
+
+Represents an abbreviation or acronym. The optional title attribute may be used to provide an expansion of the abbreviation. If specified, the title attribute must contain an expansion of the abbreviation and nothing else.
+
+Markup:
+<p>The <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr> started working on HTML5 in 2004.</p>
+
+Styleguide 0.0
+*/
+abbr {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+abbr[title]:hover {
+  cursor: help;
+}
+
+/*
+q
+
+The <code>q</code> element represents some phrasing content quoted from another source.
+
+Markup:
+<p>And then he said <q>I heart HTML5</q></p>
+
+Styleguide 0.0
+*/
+/*
+cite
+
+The <code>cite</code> element represents the title of a work (e.g. a book, a paper, an essay, a poem, a score, a song, a script, a film, a TV show, a game, a sculpture, a painting, a theatre production, a play, an opera, a musical, an exhibition, a legal case report, etc). This can be a work that is being quoted or referenced in detail (i.e. a citation), or it can just be a work that is mentioned in passing.
+A person's name is not the title of a work — even if people call that person a piece of work — and the element must therefore not be used to mark up people's names. (In some cases, the b element might be appropriate for names; e.g. in a gossip article where the names of famous people are keywords rendered with a different style to draw attention to them. In other cases, if an element is really needed, the span element can be used.)
+
+Markup:
+<p>My favourite book is <cite>Introducing HTML5</cite> by Bruce and Remy</p>
+
+Styleguide 0.0
+*/
+/*
+dfn
+
+The <code>dfn</code> element represents the defining instance of a term. The paragraph, description list group, or section that is the nearest ancestor of the dfn element must also contain the definition(s) for the term given by the dfn element.
+
+Markup:
+<p>While they're essential reading material for our job, the <dfn><abbr title="World Wide Web Consortium">W3C</abbr></dfn> specifications are not exactly George R. R. Martin-level reading material.</p>
+
+Styleguide 0.0
+*/
+dfn[title]:hover {
+  cursor: help;
+}
+
+/*
+sub
+
+The <code>sub</code> element can be used inside a var element, for variables that have subscripts.
+
+Markup:
+<p>H<sub>2</sub>O is the chemical formula for water</p>
+
+Styleguide 0.0
+*/
+/*
+sup
+
+The <code>sup</code> element represents a superscript and the sub element represents a subscript.
+
+Markup:
+<p>Today is the 2<sup>nd</sup> of May</p>
+
+Styleguide 0.0
+*/
+/*
+time
+
+Represents a precise date and/or time in the proleptic Gregorian calendar. The time element encodes modern dates and times in a machine-readable way, so that, for example, user agents could offer to add an event to the user's calendar.
+
+Markup:
+<time datetime="2007-08-29T13:58Z">August 29th, 2007 at 13:58</time>
+
+Styleguide 0.0
+*/
+/*
+code
+
+The <code>code</code> element represents a fragment of computer code. This could be an XML element name, a filename, a computer program, or any other string that a computer would recognize.
+
+Markup:
+<p>To get started with HTML5 you just need at this top of your page <code>&lt;!DOCTYPE html&gt;</code></p>
+
+Styleguide 0.0
+*/
+code {
+  white-space: pre;
+  font-family: monospace;
+}
+
+/*
+kbd
+
+The kbd element represents user input (typically keyboard input, although it may also be used to represent other input, such as voice commands).
+When the kbd element is nested inside a samp element, it represents the input as it was echoed by the system. When the kbd element contains a samp element, it represents input based on system output, for example invoking a menu item.
+When the kbd element is nested inside another kbd element, it represents an actual key or other single unit of input as appropriate for the input mechanism.
+
+Markup:
+<p>Mac users: To take a screenshot press <kbd><kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd></kbd></p>
+
+Styleguide 0.0
+*/
+/*
+samp
+
+The <code>samp</code> element represents (sample) output from a program or computing system
+
+Markup:
+<pre><samp>mike:mysite mike$ <kbd>git status</kbd>
+# On branch master
+nothing to commit (working directory clean)
+mike:mysite mike$</samp></pre>
+
+Styleguide 0.0
+*/
+/*
+var
+
+The var element represents a variable. This could be an actual variable in a mathematical expression or programming context, or it could just be a term used as a placeholder in prose.
+
+Markup:
+<p><var>E</var> energy is equal to <var>m</var> mass multiplied by the <var>c</var> speed of light, squared.</p>
+
+Styleguide 0.0
+*/
+/*
+mark
+
+Represents a run of text in one document marked or highlighted because of its relevance in another context.
+When used in a quotation or other block of text referenced in a document, it indicates a highlight that was not present in the original document — e.g., a portion of text in an academic publication that has recently come under additional scrutiny.
+
+Markup:
+<p>In this sentence we'll be using the mark element. <mark>HTML5</mark> Can you see where it has been used?</p>
+
+Styleguide 0.0
+*/
+mark {
+  color: inherit;
+  padding: 3px 6px;
+  display: inline;
+  background-color: #f9f9a6;
+}
+
+/*
+bdi
+
+The bdi element represents a span of text that is to be isolated from its surroundings for the purposes of bidirectional text formatting.
+
+Markup:
+<ul>
+	<li><bdi>johnsmith</bdi> joined the site</li>
+	<li><bdi>the_guru</bdi> posted "February update"</li>
+	<li><bdi>????</bdi> commented on "Getting started with HTML5"</li>
+</ul>
+
+Styleguide 0.0
+*/
+/*
+bdo
+
+The bdo element represents explicit text directionality formatting control for its children. It allows authors to override the Unicode bidirectional algorithm by explicitly specifying a direction override.
+
+Markup:
+<p><bdo dir="rtl">Don't cheat by reading this in a mirror!</bdo></p>
+
+Styleguide 0.0
+*/
+/*
+ruby
+
+Represents a container for base text and ruby text — small annotations used for phonetic readings in languages such as Japanese and Chinese. Examples include furigana and zhùyin fúhào (bopomofo).
+
+Markup:
+<ruby>??<rp>(</rp><rt>????</rt><rp>)</rp>???<rp>(</rp><rt>?????</rt><rp>)</rp></ruby>
+
+Styleguide 0.0
+*/
+/*
+rt
+
+Represents a container for ruby text inside a &lt;ruby&gt; element. &lt;rt&gt; content becomes the small annotations rendered by default above horizontal base text or to the right of vertical base text.
+
+Markup:
+<ruby>??<rp>(</rp><rt>????</rt><rp>)</rp>???<rp>(</rp><rt>?????</rt><rp>)</rp></ruby>
+
+Styleguide 0.0
+*/
+/*
+rp
+
+Represents a container for parentheses used to wrap ruby text (&lt;rt&gt;) inside a &lt;ruby&gt; element. These are displayed by browsers which don't support &lt;ruby&gt;, allowing for graceful degradation of ruby content. Browsers which support &lt;ruby&gt; hide &lt;rp&gt; via display:none.
+
+Markup:
+<ruby>??<rp>(</rp><rt>????</rt><rp>)</rp>???<rp>(</rp><rt>?????</rt><rp>)</rp></ruby>
+
+Styleguide 0.0
+*/
+/*
+span
+
+The span element doesn't mean anything on its own, but can be useful when used together with the global attributes, e.g. class, lang, or dir. It represents its children.
+
+Markup:
+<span>This is an example of the span element</span>
+
+Styleguide 0.0
+*/
+/*
+br
+
+The br element represents a line break. br elements must be used only for line breaks that are actually part of the content, as in poems or addresses. br elements must not be used for separating thematic groups in a paragraph
+
+Markup:
+<br />
+
+Styleguide 0.0
+*/
+/*
+wbr
+
+The wbr element represents a line break opportunity. Any content inside wbr elements must not be considered part of the surrounding text.
+
+Markup:
+html5<wbr>doctor.com
 
 Styleguide 0.0
 */
@@ -955,93 +1271,204 @@ Markup:
 Styleguide 0.0
 */
 /*
-table
+img
 
-The table element represents data with more than one dimension, in the form of a table. Tables must not be used as layout aids.
+An img element represents an image. The image given by the src attribute is the embedded content, and the value of the alt attribute is the img element's fallback content.
+The src attribute must be present, and must contain a valid non-empty URL potentially surrounded by spaces referencing a non-interactive, optionally animated, image resource that is neither paged nor scripted.
+The img element must not be used as a layout tool. In particular, img elements should not be used to display transparent images, as they rarely convey meaning and rarely add anything useful to the document.
 
 Markup:
-<table>
-	<tr>
-		<th scope="col">dog</th>
-		<th scope="col">cat</th>
-		<th scope="col">horse</th>
-		<th scope="col">iguana</th>
-	</tr>
-	<tr>
-		<td>5</td>
-		<td>2</td>
-		<td>10</td>
-		<td>500</td>
-	</tr>
-</table>
+<img src="http://placehold.it/350x150" alt="Image served from placeholder service">
+<img src="/foo.jpg" alt="Sample text for a broken image">
 
 Styleguide 0.0
 */
-table {
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  text-align: left;
-  margin: 0 0 1.5rem 0;
-}
-
-th, td {
-  padding: 5px;
-}
-
-[colspan] {
-  text-align: center;
-}
-
-[colspan="1"] {
-  text-align: left;
-}
-
-[rowspan] {
+img {
+  font-style: italic;
+  max-width: 100%;
+  height: auto;
   vertical-align: middle;
 }
 
-[rowspan="1"] {
-  vertical-align: top;
-}
+/*
+iframe
 
-.cell-numerical {
-  text-align: right;
-}
+The iframe element represents a nested browsing context.
+For iframe elements in HTML documents, the attribute, if present, must have a value using the HTML syntax that consists of the following syntactic components, in the given order:
+* Any number of comments and space characters.
+* Optionally, a DOCTYPE.
+* Any number of comments and space characters.
+* The root element, in the form of an html element.
+* Any number of comments and space characters.
 
-/**
- * Allow the ability to either set a border on all tables by default, or use a special class
- * to apply the borders.
- */
-th, td {
-  border: 1px solid #eee;
-}
+Markup:
+<iframe height="500" width="500" src="http://google.com"></iframe>
 
-th:empty
-, td:empty {
+Styleguide 0.0
+*/
+iframe {
+  width: 100%;
+  display: block;
   border: 0;
 }
 
-thead
-tr:last-child
-th {
-  border-bottom-width: 2px;
-}
+/*
+embed
 
-tbody
-tr
-th:nth-of-type {
-  border-right-width: 2px;
-}
+Represents an integration point for an external(typically non-HTML) application or interactive content.
+The optional src attribute specifies the URL of the resource being embedded.
+The optional type attribute specifies the MIME type of the plugin to instantiate. The value must be a valid MIME type, optionally with parameters. If both the type attribute and the src attribute are present, then the type attribute must specify the same MIME type as the explicit Content-Type metadata of the resource given by the src attribute.
 
-tbody
-tr:nth-of-type(odd) {
-  background-color: #eee;
-}
+Markup:
+<embed src="movieclip.mov">
 
+Styleguide 0.0
+*/
+/*
+object
+
+The object element can represent an external resource, which, depending on the type of the resource, will either be treated as an image, as a nested browsing context, or as an external resource to be processed by a plugin.
+
+Markup:
+<object>
+	<param name="movie" value="http://www.youtube.com/v/XZ5TajZYW6Y?fs=1&amp;hl=en_GB"></param>
+	<param name="allowFullScreen" value="true"></param>
+	<param name="allowscriptaccess" value="always"></param>
+	<embed src="http://www.youtube.com/v/XZ5TajZYW6Y?fs=1&amp;hl=en_GB" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="390"></embed>
+</object>
+
+Styleguide 0.0
+*/
+/*
+video
+
+Represents a video or movie.
+Content may be nested inside the video element. User agents should not show this content to the user. Authors should use this content to force older browsers to use a legacy video plugin or to inform the user of how to access the video content.
+
+Markup:
+<video src="video.ogv" controls poster="poster.jpg" width="320" height="240">
+	<a href="video.ogv">Download song</a>
+</video>
+
+Styleguide 0.0
+*/
+/*
+audio
+
+Represents a sound or audio stream.
+
+Content may be nested inside the audio element. User agents should not show this content to the user. Authors should use this content to force older browsers to use a legacy audio plugin or to inform the user of how to access the audio content.
+
+Markup:
+<audio src="music.oga" controls>
+	<a href="music.oga">Download song</a>
+</audio>
+
+Styleguide 0.0
+*/
+/*
+canvas
+
+Represents a resolution-dependent bitmap canvas, which can be used for rendering graphs, game graphics, or other visual images on the fly.
+Authors should not use the canvas element in a document when a more suitable element is available. For example, it is inappropriate to use a canvas element to render a page heading. If the desired presentation of the heading is graphically intense, it should be marked up using appropriate elements (typically h1) and then styled using CSS and supporting technologies such as XBL.
+When authors use the canvas element, they must also provide content that, when presented to the user, conveys essentially the same function or purpose as the bitmap canvas. This content should be nested within the canvas element as a fallback.
+
+Markup:
+<canvas id="myCanvas" width="300" height="150">
+	Fallback content, in case the browser does not support Canvas.
+</canvas>
+
+Styleguide 0.0
+*/
+/*
+track
+
+The track element allows authors to specify explicit external timed text tracks for media elements. It does not represent anything on its own.
+
+Markup:
+<video src="movie.webm">
+	<track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+</video>
+
+Styleguide 0.0
+*/
+/*
+map
+
+The map element, in conjunction with any area element descendants, defines an image map. The element represents its children.
+
+Markup:
+...
+
+Styleguide 0.0
+*/
+/*
+area
+
+The area element represents either a hyperlink with some text and a corresponding area on an image map, or a dead area on an image map.
+If the area element has no href attribute, then the area represented by the element cannot be selected, and the alt attribute must be omitted.
+
+Markup:
+...
+
+Styleguide 0.0
+*/
+/*
+details
+
+he details element represents a disclosure widget from which the user can obtain additional information or controls. However, the details element is not appropriate for footnotes.
+
+Markup:
+<details>
+	<summary>Name & Extension:</summary>
+	<p><input type=text name=fn value="Pillar Magazine.pdf"></p>
+	<p><label><input type=checkbox name=ext checked> Hide extension</label></p>
+</details>
+
+Styleguide 0.0
+*/
+/*
+summary
+
+The summary element represents a summary, caption, or legend for the rest of the contents of the summary element's parent details element, if any.
+
+Markup:
+<details>
+	<summary>More information </summary>
+	<p>Here is the source data that is discussed in the article ...</p>
+</details>
+
+Styleguide 0.0
+*/
+/*
+command
+
+The command element represents a command that the user can invoke. A command can be part of a context menu or toolbar, using the menu element, or can be put anywhere else in the page, to define a keyboard shortcut.
+
+Markup:
+<menu type="toolbar"><command type="radio" radiogroup="alignment" checked="checked" label="Left" icon="left.png" onclick="setAlign('left')" />
+</menu>
+
+Styleguide 0.0
+*/
+/*
+menu
+
+The menu element represents a list of commands.
+If a menu element's type attribute is in the context menu state, then the element represents the commands of a context menu, and the user can only interact with the commands if that context menu is activated. If a menu element's type attribute is in the toolbar state, then the element represents a list of active commands that the user can immediately interact with.
+If a menu element's type attribute is in the list state, then the element either represents an unordered list of items (each represented by an li element), each of which represents a command that the user can perform or activate, or, if the element has no li element children, flow content describing available commands.
+
+Markup:
+<menu type="toolbar">
+	<command type="command" disabled label="Save" icon="icons/save.png" onclick="save()">
+	<command type="command" disabled label="Publish" icon="icons/pub.png" onclick="publish()">
+</menu>
+
+Styleguide 0.0
+*/
 input, textarea, select, option, optgroup, button, legend, fieldset {
   outline: none;
-  color: #444;
+  color: #333;
   vertical-align: top;
   display: block;
 }
@@ -1378,7 +1805,7 @@ button:hover, button:focus
 , input[type="submit"]:hover, input[type="submit"]:focus
 , input[type="reset"]:hover, input[type="reset"]:focus {
   background-color: #cfd0d2;
-  color: #444;
+  color: #333;
 }
 
 /*
@@ -1519,834 +1946,6 @@ input[type="color"] {
   padding: 0;
   width: auto;
   min-width: 1.5rem;
-}
-
-/*
-details
-
-he details element represents a disclosure widget from which the user can obtain additional information or controls. However, the details element is not appropriate for footnotes.
-
-Markup:
-<details>
-	<summary>Name & Extension:</summary>
-	<p><input type=text name=fn value="Pillar Magazine.pdf"></p>
-	<p><label><input type=checkbox name=ext checked> Hide extension</label></p>
-</details>
-
-Styleguide 0.0
-*/
-/*
-summary
-
-The summary element represents a summary, caption, or legend for the rest of the contents of the summary element's parent details element, if any.
-
-Markup:
-<details>
-	<summary>More information </summary>
-	<p>Here is the source data that is discussed in the article ...</p>
-</details>
-
-Styleguide 0.0
-*/
-/*
-command
-
-The command element represents a command that the user can invoke. A command can be part of a context menu or toolbar, using the menu element, or can be put anywhere else in the page, to define a keyboard shortcut.
-
-Markup:
-<menu type="toolbar"><command type="radio" radiogroup="alignment" checked="checked" label="Left" icon="left.png" onclick="setAlign('left')" />
-</menu>
-
-Styleguide 0.0
-*/
-/*
-menu
-
-The menu element represents a list of commands.
-If a menu element's type attribute is in the context menu state, then the element represents the commands of a context menu, and the user can only interact with the commands if that context menu is activated. If a menu element's type attribute is in the toolbar state, then the element represents a list of active commands that the user can immediately interact with.
-If a menu element's type attribute is in the list state, then the element either represents an unordered list of items (each represented by an li element), each of which represents a command that the user can perform or activate, or, if the element has no li element children, flow content describing available commands.
-
-Markup:
-<menu type="toolbar">
-	<command type="command" disabled label="Save" icon="icons/save.png" onclick="save()">
-	<command type="command" disabled label="Publish" icon="icons/pub.png" onclick="publish()">
-</menu>
-
-Styleguide 0.0
-*/
-/*
-del
-
-DEL
-The del element represents a removal from the document. Thedel elements should not cross implied paragraph boundaries
-
-Markup:
-<p>My favourite colour is <del datetime="2010-10-11T01:25-07:00">blue</del> <ins datetime="2010-10-11T01:25-07:01">red</ins>, but I also like green and yellow.</p>
-
-Styleguide 0.0
-*/
-/*
-ins
-
-The ins element represents an addition to the document. The ins elements should not cross implied paragraph boundaries.
-
-Markup:
-<p>My favourite colour is <del datetime="2010-10-11T01:25-07:00">blue</del> <ins datetime="2010-10-11T01:25-07:01">red</ins>, but I also like green and yellow.</p>
-
-Styleguide 0.0
-*/
-/*
-img
-
-An img element represents an image. The image given by the src attribute is the embedded content, and the value of the alt attribute is the img element's fallback content.
-The src attribute must be present, and must contain a valid non-empty URL potentially surrounded by spaces referencing a non-interactive, optionally animated, image resource that is neither paged nor scripted.
-The img element must not be used as a layout tool. In particular, img elements should not be used to display transparent images, as they rarely convey meaning and rarely add anything useful to the document.
-
-Markup:
-<img src="http://placehold.it/350x150" alt="Image served from placeholder service">
-<img src="/foo.jpg" alt="Sample text for a broken image">
-
-Styleguide 0.0
-*/
-img {
-  font-style: italic;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-/*
-iframe
-
-The iframe element represents a nested browsing context.
-For iframe elements in HTML documents, the attribute, if present, must have a value using the HTML syntax that consists of the following syntactic components, in the given order:
-* Any number of comments and space characters.
-* Optionally, a DOCTYPE.
-* Any number of comments and space characters.
-* The root element, in the form of an html element.
-* Any number of comments and space characters.
-
-Markup:
-<iframe height="500" width="500" src="http://google.com"></iframe>
-
-Styleguide 0.0
-*/
-iframe {
-  width: 100%;
-  display: block;
-  border: 0;
-}
-
-/*
-embed
-
-Represents an integration point for an external(typically non-HTML) application or interactive content.
-The optional src attribute specifies the URL of the resource being embedded.
-The optional type attribute specifies the MIME type of the plugin to instantiate. The value must be a valid MIME type, optionally with parameters. If both the type attribute and the src attribute are present, then the type attribute must specify the same MIME type as the explicit Content-Type metadata of the resource given by the src attribute.
-
-Markup:
-<embed src="movieclip.mov">
-
-Styleguide 0.0
-*/
-/*
-object
-
-The object element can represent an external resource, which, depending on the type of the resource, will either be treated as an image, as a nested browsing context, or as an external resource to be processed by a plugin.
-
-Markup:
-<object>
-	<param name="movie" value="http://www.youtube.com/v/XZ5TajZYW6Y?fs=1&amp;hl=en_GB"></param>
-	<param name="allowFullScreen" value="true"></param>
-	<param name="allowscriptaccess" value="always"></param>
-	<embed src="http://www.youtube.com/v/XZ5TajZYW6Y?fs=1&amp;hl=en_GB" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="390"></embed>
-</object>
-
-Styleguide 0.0
-*/
-/*
-video
-
-Represents a video or movie.
-Content may be nested inside the video element. User agents should not show this content to the user. Authors should use this content to force older browsers to use a legacy video plugin or to inform the user of how to access the video content.
-
-Markup:
-<video src="video.ogv" controls poster="poster.jpg" width="320" height="240">
-	<a href="video.ogv">Download song</a>
-</video>
-
-Styleguide 0.0
-*/
-/*
-audio
-
-Represents a sound or audio stream.
-
-Content may be nested inside the audio element. User agents should not show this content to the user. Authors should use this content to force older browsers to use a legacy audio plugin or to inform the user of how to access the audio content.
-
-Markup:
-<audio src="music.oga" controls>
-	<a href="music.oga">Download song</a>
-</audio>
-
-Styleguide 0.0
-*/
-/*
-canvas
-
-Represents a resolution-dependent bitmap canvas, which can be used for rendering graphs, game graphics, or other visual images on the fly.
-Authors should not use the canvas element in a document when a more suitable element is available. For example, it is inappropriate to use a canvas element to render a page heading. If the desired presentation of the heading is graphically intense, it should be marked up using appropriate elements (typically h1) and then styled using CSS and supporting technologies such as XBL.
-When authors use the canvas element, they must also provide content that, when presented to the user, conveys essentially the same function or purpose as the bitmap canvas. This content should be nested within the canvas element as a fallback.
-
-Markup:
-<canvas id="myCanvas" width="300" height="150">
-	Fallback content, in case the browser does not support Canvas.
-</canvas>
-
-Styleguide 0.0
-*/
-/*
-track
-
-The track element allows authors to specify explicit external timed text tracks for media elements. It does not represent anything on its own.
-
-Markup:
-<video src="movie.webm">
-	<track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
-</video>
-
-Styleguide 0.0
-*/
-/*
-map
-
-The map element, in conjunction with any area element descendants, defines an image map. The element represents its children.
-
-Markup:
-...
-
-Styleguide 0.0
-*/
-/*
-area
-
-The area element represents either a hyperlink with some text and a corresponding area on an image map, or a dead area on an image map.
-If the area element has no href attribute, then the area represented by the element cannot be selected, and the alt attribute must be omitted.
-
-Markup:
-...
-
-Styleguide 0.0
-*/
-/*
-em
-
-Represents stress emphasis of its contents. The level of emphasis that a particular piece of content has is given by its number of ancestor em elements. The 'stress' being referred to is linguistic. If spoken, this stress would be emphasised pronunciation on a word that can change the nuance of a sentence.
-
-Markup:
-<p>Call a doctor <em>now</em></p>
-
-Styleguide 0.0
-*/
-/*
-strong
-
-Represents strong importance for its contents. Indicate relative importance by nesting strong elements; each strong element increases the importance of its contents. Changing the importance of a piece of text with the strong element does not change the meaning of the sentence.
-
-Markup:
-<p><strong>Warning</strong>. This dungeon is dangerous. <strong>Avoid the ducks.</strong> Take any gold you find.</p>
-
-Styleguide 0.0
-*/
-/*
-i
-
-Represents a span of text in an alternate voice or mood, or otherwise offset from the normal prose, such as a taxonomic designation, a technical term, an idiomatic phrase from another language, a thought, a ship name, or some other prose whose typical typographic presentation is italicized.
-Only use i when nothing more suitable is available — e.g., em for text with stress emphasis, strong for text with semantic importance, cite for titles in a citation or bibliography, dfn for defining a word, and var for mathematical variables.
-
-Markup:
-<p>The term <i>prose content</i> is defined above.
-<i class="taxonomy">Nanotyrannus</i> ("dwarf tyrant") is a genus of tyrannosaurid dinosaur, and is possibly a juvenile specimen of <i class="taxonomy">Tyrannosaurus</i>.</p>
-
-Styleguide 0.0
-*/
-/*
-b
-
-Represents a span of text to be stylistically offset from the normal prose without conveying any extra importance. Examples are key words in a document abstract, product names in a review, or other spans of text whose typical typographic presentation is bold.
-The b element should be used as a last resort when no other element is more appropriate. In particular, headings should use the h1 to h6 elements, stress emphasis should use the em element, importance should be denoted with the strong element, and text marked or highlighted should use the mark element.
-
-Markup:
-<p><b class="character">Deckard</b>: <i class="voiceover">The report would be routine retirement of a replicant which didn't make me feel any better about shooting a woman in the back. There it was again. Feeling, in myself. For her, for Rachael.</i></p>
-
-Styleguide 0.0
-*/
-/*
-u
-
-The <code>u</code> element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation (when you are annotating something, but not explicitly saying what it is). Examples include indicating misspelt words, labeling proper names in traditional Chinese prose, or indicating a family name when the name’s order is non-western
-
-Markup:
-<span itemscope itemtype="http://schema.org/Person" lang="ja-latn">
-	<u itemprop="familyName">Son</u> <span itemprop="givenName">Goku</span>
-</span>
-
-Styleguide 0.0
-*/
-/*
-s
-
-The <code>s</code> element represents contents that are no longer accurate or no longer relevant.
-
-Markup:
-<p>Sale on now!</p>
-<p><s>Get up to 25% off</s></p>
-<p><strong>Now down to 50% off</strong></p>
-
-Styleguide 0.0
-*/
-/*
-small
-
-Represents side comments such as small print. It is not intended to be presentational. The small element should not be used for extended spans of text such as multiple paragraphs, lists, or sections of text. It is only intended for short runs of text.
-
-Markup:
-<footer>
-	<address>
-		For more details, contact
-		<a href="mailto:hello@html5doctor.com">HTML5 Doctor</a>.
-	</address>
-	<small>&copy; copyright HTML5 Doctor. </small>
-</footer>
-
-Styleguide 0.0
-*/
-small {
-  font-size: 85%;
-}
-
-/*
-abbr
-
-Represents an abbreviation or acronym. The optional title attribute may be used to provide an expansion of the abbreviation. If specified, the title attribute must contain an expansion of the abbreviation and nothing else.
-
-Markup:
-<p>The <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr> started working on HTML5 in 2004.</p>
-
-Styleguide 0.0
-*/
-abbr {
-  font-variant: small-caps;
-  text-transform: lowercase;
-  font-weight: 600;
-}
-
-abbr[title]:hover {
-  cursor: help;
-}
-
-/*
-q
-
-The <code>q</code> element represents some phrasing content quoted from another source.
-
-Markup:
-<p>And then he said <q>I heart HTML5</q></p>
-
-Styleguide 0.0
-*/
-/*
-cite
-
-The <code>cite</code> element represents the title of a work (e.g. a book, a paper, an essay, a poem, a score, a song, a script, a film, a TV show, a game, a sculpture, a painting, a theatre production, a play, an opera, a musical, an exhibition, a legal case report, etc). This can be a work that is being quoted or referenced in detail (i.e. a citation), or it can just be a work that is mentioned in passing.
-A person's name is not the title of a work — even if people call that person a piece of work — and the element must therefore not be used to mark up people's names. (In some cases, the b element might be appropriate for names; e.g. in a gossip article where the names of famous people are keywords rendered with a different style to draw attention to them. In other cases, if an element is really needed, the span element can be used.)
-
-Markup:
-<p>My favourite book is <cite>Introducing HTML5</cite> by Bruce and Remy</p>
-
-Styleguide 0.0
-*/
-/*
-dfn
-
-The <code>dfn</code> element represents the defining instance of a term. The paragraph, description list group, or section that is the nearest ancestor of the dfn element must also contain the definition(s) for the term given by the dfn element.
-
-Markup:
-<p>While they're essential reading material for our job, the <dfn><abbr title="World Wide Web Consortium">W3C</abbr></dfn> specifications are not exactly George R. R. Martin-level reading material.</p>
-
-Styleguide 0.0
-*/
-dfn[title]:hover {
-  cursor: help;
-}
-
-/*
-sub
-
-The <code>sub</code> element can be used inside a var element, for variables that have subscripts.
-
-Markup:
-<p>H<sub>2</sub>O is the chemical formula for water</p>
-
-Styleguide 0.0
-*/
-/*
-sup
-
-The <code>sup</code> element represents a superscript and the sub element represents a subscript.
-
-Markup:
-<p>Today is the 2<sup>nd</sup> of May</p>
-
-Styleguide 0.0
-*/
-/*
-time
-
-Represents a precise date and/or time in the proleptic Gregorian calendar. The time element encodes modern dates and times in a machine-readable way, so that, for example, user agents could offer to add an event to the user's calendar.
-
-Markup:
-<time datetime="2007-08-29T13:58Z">August 29th, 2007 at 13:58</time>
-
-Styleguide 0.0
-*/
-/*
-code
-
-The <code>code</code> element represents a fragment of computer code. This could be an XML element name, a filename, a computer program, or any other string that a computer would recognize.
-
-Markup:
-<p>To get started with HTML5 you just need at this top of your page <code>&lt;!DOCTYPE html&gt;</code></p>
-
-Styleguide 0.0
-*/
-code {
-  white-space: pre;
-  font-family: monospace;
-  padding: .2rem;
-  background: #eee;
-  border-radius: .2rem;
-  border: 1px solid #ddd;
-}
-
-/*
-kbd
-
-The kbd element represents user input (typically keyboard input, although it may also be used to represent other input, such as voice commands).
-When the kbd element is nested inside a samp element, it represents the input as it was echoed by the system. When the kbd element contains a samp element, it represents input based on system output, for example invoking a menu item.
-When the kbd element is nested inside another kbd element, it represents an actual key or other single unit of input as appropriate for the input mechanism.
-
-Markup:
-<p>Mac users: To take a screenshot press <kbd><kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd></kbd></p>
-
-Styleguide 0.0
-*/
-/*
-samp
-
-The <code>samp</code> element represents (sample) output from a program or computing system
-
-Markup:
-<pre><samp>mike:mysite mike$ <kbd>git status</kbd>
-# On branch master
-nothing to commit (working directory clean)
-mike:mysite mike$</samp></pre>
-
-Styleguide 0.0
-*/
-/*
-var
-
-The var element represents a variable. This could be an actual variable in a mathematical expression or programming context, or it could just be a term used as a placeholder in prose.
-
-Markup:
-<p><var>E</var> energy is equal to <var>m</var> mass multiplied by the <var>c</var> speed of light, squared.</p>
-
-Styleguide 0.0
-*/
-/*
-mark
-
-Represents a run of text in one document marked or highlighted because of its relevance in another context.
-When used in a quotation or other block of text referenced in a document, it indicates a highlight that was not present in the original document — e.g., a portion of text in an academic publication that has recently come under additional scrutiny.
-
-Markup:
-<p>In this sentence we'll be using the mark element. <mark>HTML5</mark> Can you see where it has been used?</p>
-
-Styleguide 0.0
-*/
-mark {
-  color: inherit;
-  padding: 3px 6px;
-  display: inline;
-  background-color: #f9f9a6;
-}
-
-/*
-bdi
-
-The bdi element represents a span of text that is to be isolated from its surroundings for the purposes of bidirectional text formatting.
-
-Markup:
-<ul>
-	<li><bdi>johnsmith</bdi> joined the site</li>
-	<li><bdi>the_guru</bdi> posted "February update"</li>
-	<li><bdi>????</bdi> commented on "Getting started with HTML5"</li>
-</ul>
-
-Styleguide 0.0
-*/
-/*
-bdo
-
-The bdo element represents explicit text directionality formatting control for its children. It allows authors to override the Unicode bidirectional algorithm by explicitly specifying a direction override.
-
-Markup:
-<p><bdo dir="rtl">Don't cheat by reading this in a mirror!</bdo></p>
-
-Styleguide 0.0
-*/
-/*
-ruby
-
-Represents a container for base text and ruby text — small annotations used for phonetic readings in languages such as Japanese and Chinese. Examples include furigana and zhùyin fúhào (bopomofo).
-
-Markup:
-<ruby>??<rp>(</rp><rt>????</rt><rp>)</rp>???<rp>(</rp><rt>?????</rt><rp>)</rp></ruby>
-
-Styleguide 0.0
-*/
-/*
-rt
-
-Represents a container for ruby text inside a &lt;ruby&gt; element. &lt;rt&gt; content becomes the small annotations rendered by default above horizontal base text or to the right of vertical base text.
-
-Markup:
-<ruby>??<rp>(</rp><rt>????</rt><rp>)</rp>???<rp>(</rp><rt>?????</rt><rp>)</rp></ruby>
-
-Styleguide 0.0
-*/
-/*
-rp
-
-Represents a container for parentheses used to wrap ruby text (&lt;rt&gt;) inside a &lt;ruby&gt; element. These are displayed by browsers which don't support &lt;ruby&gt;, allowing for graceful degradation of ruby content. Browsers which support &lt;ruby&gt; hide &lt;rp&gt; via display:none.
-
-Markup:
-<ruby>??<rp>(</rp><rt>????</rt><rp>)</rp>???<rp>(</rp><rt>?????</rt><rp>)</rp></ruby>
-
-Styleguide 0.0
-*/
-/*
-span
-
-The span element doesn't mean anything on its own, but can be useful when used together with the global attributes, e.g. class, lang, or dir. It represents its children.
-
-Markup:
-<span>This is an example of the span element</span>
-
-Styleguide 0.0
-*/
-/*
-br
-
-The br element represents a line break. br elements must be used only for line breaks that are actually part of the content, as in poems or addresses. br elements must not be used for separating thematic groups in a paragraph
-
-Markup:
-<br />
-
-Styleguide 0.0
-*/
-/*
-wbr
-
-The wbr element represents a line break opportunity. Any content inside wbr elements must not be considered part of the surrounding text.
-
-Markup:
-html5<wbr>doctor.com
-
-Styleguide 0.0
-*/
-/*
-Nav
-
-[Description for nav element]
-
-Markup:
-<nav>
-	<ul>
-		<li><a>Nav Item</a></li>
-		<li><a>Nav Item</a></li>
-		<li><a>Nav Item</a></li>
-		<li><a>Nav Item</a></li>
-	</ul>
-</nav>
-
-Styleguide 0.0
-*/
-nav
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
-  padding: 0;
-}
-
-nav
-li {
-  max-width: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-nav a, nav
-li > span {
-  display: block;
-  text-decoration: none;
-}
-
-nav
-a {
-  border: 0;
-}
-
-nav
-a:hover, nav
-a:focus {
-  text-decoration: none;
-}
-
-/*
-Nav
-
-[Description for nav class]
-
-Markup:
-...
-
-Styleguide 0.0
-*/
-.nav--bullet {
-  text-align: center;
-}
-
-.nav--bullet
-li {
-  display: inline-block;
-}
-
-.nav--bullet
-a {
-  border: 1px solid red;
-  height: 10px;
-  width: 10px;
-  display: block;
-  padding: 0;
-  text-indent: -999em;
-  border-radius: 100%;
-}
-
-.nav--bullet
-.nav__active a {
-  background-color: green;
-}
-
-.nav--bullet-vertical
-li {
-  display: block;
-}
-
-.nav--bullet-vertical
-a {
-  margin: 4px auto;
-}
-
-/*
-Nav
-
-[Description for nav class]
-
-Markup:
-...
-
-Styleguide 0.0
-*/
-@media screen and (max-width: 667px) {
-  .nav--pagination
-ul {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-  }
-  .nav--pagination
-li {
-    display: none;
-  }
-  .nav--pagination .nav__prev, .nav--pagination
-.nav__next {
-    display: table-cell;
-  }
-  .nav--pagination
-.nav__next {
-    text-align: right;
-  }
-}
-
-@media screen and (min-width: 668px) {
-  .nav--pagination {
-    text-align: center;
-  }
-  .nav--pagination
-li {
-    display: inline-block;
-  }
-}
-
-/*
-Nav
-
-[Description for nav class]
-
-Markup:
-...
-
-Styleguide 0.0
-*/
-.nav--prev-next
-ul {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-}
-
-.nav--prev-next
-li {
-  display: table-cell;
-}
-
-.nav--prev-next .nav__next, .nav--prev-next
-.nav__next > * {
-  text-align: right;
-}
-
-.nav--prev-next .nav__back, .nav--prev-next
-.nav__back > * {
-  text-align: center;
-}
-
-/*
-Nav
-
-[Description for nav class]
-
-Markup:
-...
-
-Styleguide 0.0
-*/
-@media screen and (max-width: 667px) {
-  .nav--breadcrumb
-li {
-    display: none;
-  }
-  .nav--breadcrumb
-li:nth-last-child(2):not(:first-child) {
-    display: inline-block;
-  }
-  .nav--breadcrumb
-li:nth-last-child(2):not(:first-child)
-> a:before {
-    content: "< ";
-  }
-}
-
-.nav--breadcrumb
-li {
-  display: inline-block;
-}
-
-/*
-Nav
-
-[Description for nav class]
-
-Markup:
-...
-
-Styleguide 0.0
-*/
-@media screen and (min-width: 601px) {
-  .nav--multilevel
-.nav__level-1 {
-    display: table;
-    width: 100%;
-    position: relative;
-    z-index: 400;
-  }
-  .nav--multilevel
-.nav__level-1
-> li {
-    display: table-cell;
-  }
-  .nav--multilevel
-.nav__level-2 {
-    position: absolute;
-    left: 0;
-    display: none;
-  }
-  .nav--multilevel
-.nav__level-3 {
-    position: absolute;
-    left: 100%;
-    top: 0;
-    display: none;
-  }
-  .nav--multilevel
-.nav__level-1
-> [class="nav__children"]
-.nav__level-2 {
-    background: #ccc;
-  }
-  .nav--multilevel
-.nav__level-1
-> [class="nav__children"]
-.nav__level-3 {
-    background: green;
-  }
-  .nav--multilevel
-.nav__megamenu {
-    position: static;
-  }
-  .nav--multilevel
-.nav__group {
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: none;
-    background: yellow;
-  }
-  .nav--multilevel
-.nav__group
-[class*="nav__level-"] {
-    position: static;
-    display: block;
-  }
-  .nav--multilevel
-.nav__group
-.nav__level-2 {
-    display: inline-block;
-    width: 19.5%;
-  }
-  .nav--multilevel .nav__children:hover > a + .nav__group, .nav--multilevel .nav__children:hover > a
-+ [class*="nav__level-"]
-, .nav--multilevel .nav__children > a:hover + .nav__group, .nav--multilevel .nav__children > a:hover
-+ [class*="nav__level-"]
-, .nav--multilevel
-.nav__children > a:focus + .nav__group, .nav--multilevel
-.nav__children > a:focus
-+ [class*="nav__level-"] {
-    display: block;
-  }
 }
 
 [aria-hidden="true"] {
