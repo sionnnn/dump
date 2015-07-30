@@ -2,10 +2,8 @@
 	"sass" :
 	{
 		"outputStyle"		:"expanded",
-		"includePaths"		:[
-			"../",
-			"src/styles-fallback",
-			"bower_components"
+		"includePaths"		:[						
+			"../modules"
 		]
 	},
 	"autoprefixer":

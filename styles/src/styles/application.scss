@@ -2,29 +2,29 @@
 
 // include normalize before anything else, to make sure that there are no conflicts of styles
 // with the main application and the reset..
-@import "prettylittle-normalize/generic.normalize";
+@import "fink-normalize/generic.normalize";
 
 // Core includes, variables, mixins, placeholders etc...
 // ================================================================================================
-@import "prettylittle-constants/core.constants",
+@import "fink-constants/core.constants",
 		// import project vars after constants - so we can use them, but before loading the default
 		// fallbacks.
 		"vars",
-		"prettylittle-defaults/settings.defaults",
-		"prettylittle-functions/function.all",
-		"prettylittle-mixins/mixin.all",
-		"prettylittle-placeholders/core.placeholders";
+		"fink-defaults/settings.defaults",
+		"fink-functions/function.all",
+		"fink-mixins/mixin.all",
+		"fink-placeholders/core.placeholders";
 
-@import "prettylittle-elements/head",
-		"prettylittle-elements/sections",
-		"prettylittle-elements/links",
-		"prettylittle-elements/edits",
-		"prettylittle-elements/tables",
-		"prettylittle-elements/text",
-		"prettylittle-elements/grouping",
-		"prettylittle-elements/embedded",
-		"prettylittle-elements/interactive",
-		"prettylittle-elements/forms";
+@import "fink-elements/elements.head",
+		"fink-elements/elements.sections",
+		"fink-elements/elements.links",
+		"fink-elements/elements.edits",
+		"fink-elements/elements.tables",
+		"fink-elements/elements.text",
+		"fink-elements/elements.grouping",
+		"fink-elements/elements.embedded",
+		"fink-elements/elements.interactive",
+		"fink-elements/elements.forms";
 
 // I've listened to talks where people say it's best to add utility classes to the end of the CSS file.. DONE. :)
-@import "prettylittle-utility/core.utility";
+@import "fink-utility/core.utility";

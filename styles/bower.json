@@ -17,13 +17,5 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "prettylittle-constants": "michaelord/prettylittle-constants",
-    "prettylittle-defaults": "michaelord/prettylittle-defaults",
-    "prettylittle-elements": "michaelord/prettylittle-elements",    
-    "prettylittle-functions": "michaelord/prettylittle-functions",    
-    "prettylittle-mixins": "michaelord/prettylittle-mixins",    
-    "prettylittle-normalize": "michaelord/prettylittle-normalize",
-    "prettylittle-placeholders": "michaelord/prettylittle-placeholders",
-    "prettylittle-utility": "michaelord/prettylittle-utility"
   }
 }

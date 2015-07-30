@@ -401,27 +401,6 @@ code {
   word-wrap: normal;
 }
 
-button, input[type="button"], input[type="submit"], input[type="reset"], input[type="image"] {
-  width: auto;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: nowrap;
-  font-famliy: inherit;
-  font-size: 100%;
-  cursor: pointer;
-  border: none;
-  margin: 0;
-  line-height: 1;
-}
-
-button, input[type="button"], input[type="submit"], input[type="reset"], input[type="image"], button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="image"]:hover {
-  text-decoration: none;
-}
-
-button:active, input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, input[type="image"]:active, button:focus, input[type="button"]:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="image"]:focus {
-  outline: none;
-}
-
 /*
 html
 
@@ -1748,7 +1727,24 @@ input[type="image"] {
   padding: 8px 10px;
 }
 
-input[disabled]
+input[type="text"][disabled]
+, input[type="email"][disabled]
+, input[type="password"][disabled]
+, input[type="search"][disabled]
+, input[type="color"][disabled]
+, input[type="date"][disabled]
+, input[type="datetime"][disabled]
+, input[type="datetime-local"][disabled]
+, input[type="month"][disabled]
+, input[type="number"][disabled]
+, input[type="tel"][disabled]
+, input[type="time"][disabled]
+, input[type="url"][disabled]
+, input[type="week"][disabled]
+, input[list][disabled]
+, input[type="file"][disabled]
+, select[disabled]
+, textarea[disabled]
 , textarea[disabled]
 , select[disabled]
 , option[disabled]
@@ -1756,7 +1752,24 @@ input[disabled]
   cursor: not-allowed;
 }
 
-input:hover
+input[type="text"]:hover
+, input[type="email"]:hover
+, input[type="password"]:hover
+, input[type="search"]:hover
+, input[type="color"]:hover
+, input[type="date"]:hover
+, input[type="datetime"]:hover
+, input[type="datetime-local"]:hover
+, input[type="month"]:hover
+, input[type="number"]:hover
+, input[type="tel"]:hover
+, input[type="time"]:hover
+, input[type="url"]:hover
+, input[type="week"]:hover
+, input[list]:hover
+, input[type="file"]:hover
+, select:hover
+, textarea:hover
 , textarea:hover
 , select:hover
 , option:hover
@@ -1765,7 +1778,24 @@ input:hover
   border-color: #cfd0d2;
 }
 
-input:focus
+input[type="text"]:focus
+, input[type="email"]:focus
+, input[type="password"]:focus
+, input[type="search"]:focus
+, input[type="color"]:focus
+, input[type="date"]:focus
+, input[type="datetime"]:focus
+, input[type="datetime-local"]:focus
+, input[type="month"]:focus
+, input[type="number"]:focus
+, input[type="tel"]:focus
+, input[type="time"]:focus
+, input[type="url"]:focus
+, input[type="week"]:focus
+, input[list]:focus
+, input[type="file"]:focus
+, select:focus
+, textarea:focus
 , textarea:focus
 , select:focus
 , option:focus

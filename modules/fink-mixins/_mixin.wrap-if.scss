@@ -1,0 +1,14 @@
+@mixin wrap-if($boolean, $selector)
+{
+	@if($boolean)
+	{
+		#{$selector}
+		{
+			@content;
+		}
+	}
+	@else
+	{
+		@content;
+	}
+}

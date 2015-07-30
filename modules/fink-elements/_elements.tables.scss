@@ -1,0 +1,176 @@
+// === Variables
+$table-auto-border						:true !default;
+$table-auto-stripe						:true !default;
+
+// === Main
+
+/*
+table
+
+The table element represents data with more than one dimension, in the form of a table. Tables must not be used as layout aids.
+
+Markup:
+<table>
+	<tr>
+		<th scope="col">dog</th>
+		<th scope="col">cat</th>
+		<th scope="col">horse</th>
+		<th scope="col">iguana</th>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>2</td>
+		<td>10</td>
+		<td>500</td>
+	</tr>
+</table>
+
+Styleguide 0.0
+*/
+table
+{
+	width 								:100%;
+	border-spacing						:0;
+	border-collapse						:collapse;
+	text-align 							:left;
+	// TODO - this
+	//margin 								:0 0 $base-margin 0;
+}
+
+caption
+{
+
+}
+
+thead
+{
+
+}
+
+tbody
+{
+
+}
+
+tfoot
+{
+
+}
+
+tr
+{
+
+}
+
+th, td
+{
+	// TODO - this
+	padding 							:0 5px;
+}
+
+th
+{
+
+}
+
+td
+{
+
+}
+
+// Cell alignments
+[colspan]
+{
+	text-align 							:center;
+}
+
+[colspan="1"]
+{
+	text-align 							:left;
+}
+
+[rowspan]
+{
+	vertical-align						:middle;
+}
+
+[rowspan="1"]
+{
+	vertical-align 						:top;
+}
+
+// cells that contain numbers should probably be right aligned, this helper does that...
+.cell-numerical
+{
+	text-align 							:right;
+}
+
+col
+{
+
+}
+
+colgroup
+{
+
+}
+
+/**
+ * Allow the ability to either set a border on all tables by default, or use a special class
+ * to apply the borders.
+ */
+@include wrap-if($table-auto-border == false, ".table--bordered")
+{
+	th, td
+	{
+		border 							:1px solid #eee;
+
+		&:empty
+		{
+			border 						:0;
+		}
+	}
+
+	thead
+	{
+		tr
+		{
+			&:last-child
+			{
+				th
+				{
+					border-bottom-width	:2px;
+				}
+			}
+		}
+	}
+
+	tbody
+	{
+		tr
+		{
+			th
+			{
+				&:nth-of-type
+				{
+					border-right-width	:2px;
+				}
+			}
+
+		}
+	}
+}
+
+@include wrap-if($table-auto-stripe == false, ".table--striped")
+{
+	tbody
+	{
+		tr
+		{
+			&:nth-of-type(odd)
+			{
+				background-color 		:#eee;
+			}
+		}
+	}
+}
