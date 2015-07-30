@@ -13,6 +13,9 @@
     "!modules/",
     "!modules/*"
   ],
+  "main":[
+    "modules/constants/_core.constants.scss"
+  ],
   "dependencies": {
   },
   "devDependencies": {
