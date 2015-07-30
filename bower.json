@@ -10,7 +10,8 @@
   "ignore": [
     "*",
     "/.*",
-    "!modules/constants/_core.constants.scss"
+    "!modules/constants/_core.constants.scss",
+    "!modules/defaults/_settings.defaults.scss"
   ],
   "main": [
     "modules/constants/_core.constants.scss",
