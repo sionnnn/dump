@@ -5,13 +5,12 @@
     "sion evans <sionevans@gmail.com>"
   ],
   "description": "base",
-  "main": "main",
   "license": "MIT",
   "private": true,
   "ignore": [
     "*",
     "!modules/",
-    "!modules/**/*.scss"
+    "!modules/**/"
   ],
   "main": [
     "./modules/constants/_core.constants.scss",
