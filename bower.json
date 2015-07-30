@@ -1,0 +1,26 @@
+{
+  "name": "Dump Modules",
+  "version": "0.1.0",
+  "authors": [
+    "sion evans <sionevans@gmail.com>"
+  ],
+  "description": "base",
+  "main": "main",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "**/",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "main":[]
+    "modules/fink-constants/_core.constants.scss"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
