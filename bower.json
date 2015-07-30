@@ -10,7 +10,8 @@
   "private": true,
   "ignore": [
     "*",
-    "!modules/"
+    "!modules/",
+    "!modules/**/*.scss"
   ],
   "main": [
     "./modules/constants/_core.constants.scss",
