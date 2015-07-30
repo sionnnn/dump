@@ -10,11 +10,12 @@
   "private": true,
   "ignore": [
     "**/.*",
-    "./fink-constants/!(*.scss)",
+    "./modules/fink-constants/!(*.scss)",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    ["./!(*.scss)"]
   ],
   "main":[
     "modules/fink-constants/_core.constants.scss"
