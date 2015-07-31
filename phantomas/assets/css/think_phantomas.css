@@ -1,0 +1,59 @@
+.p--header{
+    background-color: #333;
+    color: #ffffff;
+}
+
+.p--header--span{
+    background: url(logo_white.png) 0 no-repeat;
+    padding-left: 7em;
+}
+
+body{
+    background: #e9eae2 url(bg.png) -900px 0 no-repeat;   
+}
+
+main{
+    background: #ffffff;   
+}
+
+h2{
+    background: #333;
+    text-transform: uppercase;
+    color:#ffffff;
+}
+
+h3{
+    margin: 2em 0;
+    background-color: #333;
+}
+
+h4{
+    color: #333;
+}
+
+.p--graphs--button__expand, 
+.p--graphs--button__offenders, 
+.p--graphs--descriptionBtn.active,
+.p--graphs--warningBtn.active,
+.p--graphs--warning,
+.p--graphs--description,
+.p--graphs--detailBox,
+.p--filmstrip--time{
+    background-color: #333;
+    color:#fff;
+}
+
+.p--graphs--button__expand:hover,
+.p--graphs--button__offenders:hover{
+    background: #522953;
+    cursor: pointer;
+}
+
+.lineChart--circle,
+.p--lineChart--reset{
+    fill: #572B57;
+}
+
+.p--footer{
+    color: #333;
+}
