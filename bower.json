@@ -8,7 +8,11 @@
   "license": "MIT",
   "private": true,
   "ignore": [
-    "/.*"
+    "**/",
+    "/.*",
+    "!modules/",
+    "!modules/.*",
+    "!modules/**/"
   ],
   "main": "modules/constants/_core.constants.scss"
 }
