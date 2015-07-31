@@ -8,17 +8,7 @@
   "license": "MIT",
   "private": true,
   "ignore": [
-    "**/",
-    "/.*",
-    "!modules/constants/_core.constants.scss",
-    "!modules/defaults/_settings.defaults.scss",
-    "!modules/normalize/_generic.normalize.scss",
-    "!modules/placeholders/_core.placeholders.scss",
-    "!modules/utility/_core.utility.scss"
+    "/.*"
   ],
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
   "main": "modules/constants/_core.constants.scss"
 }
