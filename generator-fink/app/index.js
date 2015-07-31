@@ -5,6 +5,7 @@ var yosay = require('yosay');
 var fs = require('fs');
 var thinksay = require('thinksay');
 var htmlwiring = require("html-wiring");
+var ncp = require('ncp');
 
 var bowerDependencies = false;
 
@@ -108,8 +109,10 @@ module.exports = yeoman.generators.Base.extend({
   initializing: function () {
     this.pkg = require('../package.json');
   },
+  
 
   prompting: function () {
+      
     var done = this.async();
 
     // Have Yeoman greet the user.
@@ -249,10 +252,11 @@ module.exports = yeoman.generators.Base.extend({
                                             //get remote data and copy to root
                                             this.remote('sionnnn', 'fink', function(err, remote) {
                                         
-                                                remote['directory']('.', './');
-                                                
+                                                ncp(remote.cachePath,this.destinationPath(),function(err){
+                                                    done();
+                                                });
                                                 //move to next step
-                                                done();
+                                                
                                                
                                             }.bind(this));
                                 
@@ -286,7 +290,8 @@ module.exports = yeoman.generators.Base.extend({
       
       function htmlHintPlusIncluded(){
           if(hasFeature('newer:htmlhintplus',_this.htmlFeatures)){
-            return {'package': 'grunt-htmlhint-plus'};
+              var string = {'package': 'grunt-htmlhint-plus'};
+            return string;
           }
           else{
               return false;
