@@ -372,7 +372,7 @@ module.exports = yeoman.generators.Base.extend({
                 var packs = gruntPackageLookup[arrays[i][e]];
                 
                 for(var o=0;o<packs.length;o++){
-                    _this.npmInstall([packs[o]], { 'saveDev': true,'global':true});
+                    _this.npmInstall([packs[o]], { 'saveDev': true});
                 }
             }
         }
@@ -380,7 +380,7 @@ module.exports = yeoman.generators.Base.extend({
     
     //install bower dependencies
     for(var i=0;i<this.bowerFeatures.length;i++){
-        _this.bowerInstall([_this.bowerFeatures[i]], { 'saveDev': true,'global':true});
+        _this.bowerInstall([_this.bowerFeatures[i]], { 'saveDev': true});
     }
     
   
