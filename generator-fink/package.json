@@ -1,5 +1,5 @@
 {
-  "name": "generator-th-nk",
+  "name": "generator-fink",
   "version": "0.0.0",
   "description": "Yeoman generator",
   "license": "MIT",
@@ -28,7 +28,9 @@
     "yosay": "^0.3.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "html-wiring": "^1.2.0",
+    "mocha": "*",
+    "ncp": "^2.0.0"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
