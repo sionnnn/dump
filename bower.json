@@ -1,6 +1,7 @@
 {
   "name": "dump",
   "version": "0.1.0",
+  "main": "README.md",
   "authors": [
     "sion evans <sionevans@gmail.com>"
   ],
