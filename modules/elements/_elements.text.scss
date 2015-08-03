@@ -1,7 +1,20 @@
-// === Variables
+/*----------------------------------------------------------------------------*\
+  ...
+\*----------------------------------------------------------------------------*/
 $base-small-print-size			:85% !default;
+$mark-background-color			:#f9f9a6 !default;
 
-// === Main
+/*----------------------------------------------------------------------------*\
+  Main
+\*----------------------------------------------------------------------------*/
+
+code,
+kbd,
+pre,
+samp
+{
+	font-family 				:$base-mono-font-family;
+}
 
 /*
 em
@@ -11,7 +24,7 @@ Represents stress emphasis of its contents. The level of emphasis that a particu
 Markup:
 <p>Call a doctor <em>now</em></p>
 
-Styleguide 0.2.x
+Styleguide 0.3.46
 */
 em
 {
@@ -26,7 +39,7 @@ Represents strong importance for its contents. Indicate relative importance by n
 Markup:
 <p><strong>Warning</strong>. This dungeon is dangerous. <strong>Avoid the ducks.</strong> Take any gold you find.</p>
 
-Styleguide 0.2.x
+Styleguide 0.3.47
 */
 strong
 {
@@ -43,7 +56,7 @@ Markup:
 <p>The term <i>prose content</i> is defined above.
 <i class="taxonomy">Nanotyrannus</i> ("dwarf tyrant") is a genus of tyrannosaurid dinosaur, and is possibly a juvenile specimen of <i class="taxonomy">Tyrannosaurus</i>.</p>
 
-Styleguide 0.2.x
+Styleguide 0.3.48
 */
 i
 {
@@ -59,7 +72,7 @@ The b element should be used as a last resort when no other element is more appr
 Markup:
 <p><b class="character">Deckard</b>: <i class="voiceover">The report would be routine retirement of a replicant which didn't make me feel any better about shooting a woman in the back. There it was again. Feeling, in myself. For her, for Rachael.</i></p>
 
-Styleguide 0.2.x
+Styleguide 0.3.49
 */
 b
 {
@@ -76,7 +89,7 @@ Markup:
 	<u itemprop="familyName">Son</u> <span itemprop="givenName">Goku</span>
 </span>
 
-Styleguide 0.2.x
+Styleguide 0.3.50
 */
 u
 {
@@ -93,7 +106,7 @@ Markup:
 <p><s>Get up to 25% off</s></p>
 <p><strong>Now down to 50% off</strong></p>
 
-Styleguide 0.2.x
+Styleguide 0.3.51
 */
 s
 {
@@ -114,7 +127,7 @@ Markup:
 	<small>&copy; copyright HTML5 Doctor. </small>
 </footer>
 
-Styleguide 0.2.x
+Styleguide 0.3.52
 */
 small
 {
@@ -129,7 +142,7 @@ Represents an abbreviation or acronym. The optional title attribute may be used 
 Markup:
 <p>The <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr> started working on HTML5 in 2004.</p>
 
-Styleguide 0.2.x
+Styleguide 0.3.53
 */
 abbr
 {
@@ -154,7 +167,7 @@ The <code>q</code> element represents some phrasing content quoted from another 
 Markup:
 <p>And then he said <q>I heart HTML5</q></p>
 
-Styleguide 0.2.x
+Styleguide 0.3.54
 */
 q
 {
@@ -170,7 +183,7 @@ A person's name is not the title of a work — even if people call that person a
 Markup:
 <p>My favourite book is <cite>Introducing HTML5</cite> by Bruce and Remy</p>
 
-Styleguide 0.2.x
+Styleguide 0.3.55
 */
 cite
 {
@@ -185,7 +198,7 @@ The <code>dfn</code> element represents the defining instance of a term. The par
 Markup:
 <p>While they're essential reading material for our job, the <dfn><abbr title="World Wide Web Consortium">W3C</abbr></dfn> specifications are not exactly George R. R. Martin-level reading material.</p>
 
-Styleguide 0.2.x
+Styleguide 0.3.56
 */
 dfn
 {
@@ -206,7 +219,7 @@ The <code>sub</code> element can be used inside a var element, for variables tha
 Markup:
 <p>H<sub>2</sub>O is the chemical formula for water</p>
 
-Styleguide 0.2.x
+Styleguide 0.3.57
 */
 sub
 {
@@ -221,7 +234,7 @@ The <code>sup</code> element represents a superscript and the sub element repres
 Markup:
 <p>Today is the 2<sup>nd</sup> of May</p>
 
-Styleguide 0.2.x
+Styleguide 0.3.58
 */
 sup
 {
@@ -236,7 +249,7 @@ Represents a precise date and/or time in the proleptic Gregorian calendar. The t
 Markup:
 <time datetime="2007-08-29T13:58Z">August 29th, 2007 at 13:58</time>
 
-Styleguide 0.2.x
+Styleguide 0.3.59
 */
 time
 {
@@ -251,7 +264,7 @@ The <code>code</code> element represents a fragment of computer code. This could
 Markup:
 <p>To get started with HTML5 you just need at this top of your page <code>&lt;!DOCTYPE html&gt;</code></p>
 
-Styleguide 0.2.x
+Styleguide 0.3.60
 */
 code
 {
@@ -269,7 +282,7 @@ When the kbd element is nested inside another kbd element, it represents an actu
 Markup:
 <p>Mac users: To take a screenshot press <kbd><kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd></kbd></p>
 
-Styleguide 0.2.x
+Styleguide 0.3.61
 */
 kbd
 {
@@ -287,7 +300,7 @@ Markup:
 nothing to commit (working directory clean)
 mike:mysite mike$</samp></pre>
 
-Styleguide 0.2.x
+Styleguide 0.3.62
 */
 samp
 {
@@ -302,7 +315,7 @@ The var element represents a variable. This could be an actual variable in a mat
 Markup:
 <p><var>E</var> energy is equal to <var>m</var> mass multiplied by the <var>c</var> speed of light, squared.</p>
 
-Styleguide 0.2.x
+Styleguide 0.3.63
 */
 var
 {
@@ -318,14 +331,14 @@ When used in a quotation or other block of text referenced in a document, it ind
 Markup:
 <p>In this sentence we'll be using the mark element. <mark>HTML5</mark> Can you see where it has been used?</p>
 
-Styleguide 0.2.x
+Styleguide 0.3.64
 */
 mark
 {
 	color 						:inherit;
-	padding 					:3px 6px;
+	padding 					:2px 4px;
 	display 					:inline;
-	background-color			:#f9f9a6;
+	background-color			:$mark-background-color;
 }
 
 /*
@@ -340,7 +353,7 @@ Markup:
 	<li><bdi>????</bdi> commented on "Getting started with HTML5"</li>
 </ul>
 
-Styleguide 0.2.x
+Styleguide 0.3.65
 */
 bdi
 {
@@ -355,7 +368,7 @@ The bdo element represents explicit text directionality formatting control for i
 Markup:
 <p><bdo dir="rtl">Don't cheat by reading this in a mirror!</bdo></p>
 
-Styleguide 0.2.x
+Styleguide 0.3.66
 */
 bdo
 {
@@ -370,7 +383,7 @@ Represents a container for base text and ruby text — small annotations used fo
 Markup:
 <ruby>??<rp>(</rp><rt>????</rt><rp>)</rp>???<rp>(</rp><rt>?????</rt><rp>)</rp></ruby>
 
-Styleguide 0.2.x
+Styleguide 0.3.67
 */
 ruby
 {
@@ -385,7 +398,7 @@ Represents a container for ruby text inside a &lt;ruby&gt; element. &lt;rt&gt; c
 Markup:
 <ruby>??<rp>(</rp><rt>????</rt><rp>)</rp>???<rp>(</rp><rt>?????</rt><rp>)</rp></ruby>
 
-Styleguide 0.2.x
+Styleguide 0.3.68
 */
 rt
 {
@@ -400,7 +413,7 @@ Represents a container for parentheses used to wrap ruby text (&lt;rt&gt;) insid
 Markup:
 <ruby>??<rp>(</rp><rt>????</rt><rp>)</rp>???<rp>(</rp><rt>?????</rt><rp>)</rp></ruby>
 
-Styleguide 0.2.x
+Styleguide 0.3.69
 */
 rp
 {
@@ -415,7 +428,7 @@ The span element doesn't mean anything on its own, but can be useful when used t
 Markup:
 <span>This is an example of the span element</span>
 
-Styleguide 0.2.x
+Styleguide 0.3.70
 */
 span
 {
@@ -430,7 +443,7 @@ The br element represents a line break. br elements must be used only for line b
 Markup:
 <br />
 
-Styleguide 0.2.x
+Styleguide 0.3.71
 */
 br
 {
@@ -445,7 +458,7 @@ The wbr element represents a line break opportunity. Any content inside wbr elem
 Markup:
 html5<wbr>doctor.com
 
-Styleguide 0.2.x
+Styleguide 0.3.72
 */
 wbr
 {

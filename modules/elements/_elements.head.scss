@@ -7,11 +7,9 @@ html
 
 The html element represents the root of an HTML document.
 
-Styleguide 0.2.x
 */
 html
 {
-	line-height					:$base-line-height;
 	overflow-y 					:scroll;
 	min-height 					:100%;
 
@@ -21,16 +19,11 @@ html
 	-moz-osx-font-smoothing		:grayscale;
 	 -webkit-font-smoothing 	:antialiased;
 
-	//font						:$base-font-weight #{$base-font-size + "%"}/#{$base-line-height} $base-font-family;
-	/*
-	@media (max-width: 37.5em)
-	{
-		font-size				:100%;
-	}*/
+	 -webkit-tap-highlight-color	:rgba(0,0,0,0);
 }
 
 // Box Sizing
-// ================================================================================================
+// =============================================================================
 // @notes
 // A more considered reset; more of a restart...
 // As per: csswizardry.com/2011/10/reset-restarted
@@ -52,44 +45,4 @@ html
 	outline 					:none;
 	background-position			:0 0;
 	background-repeat			:no-repeat;
-}
-
-head
-{
-
-}
-
-title
-{
-
-}
-
-base
-{
-
-}
-
-link
-{
-
-}
-
-meta
-{
-
-}
-
-style
-{
-
-}
-
-script
-{
-
-}
-
-noscript
-{
-
 }

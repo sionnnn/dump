@@ -7,7 +7,7 @@ body
 
 The body element represents the main content of the document.
 
-Styleguide 0.2.x
+Styleguide 0.3.37
 */
 body
 {
@@ -16,8 +16,6 @@ body
 	font-weight					:400;
 	text-rendering 				:optimizeLegibility;
 	height 						:100%;
-//	font-family					:$base-font-family;
-	//background 					:$base-background-color;// TODO - dsd
 	color 						:$core-body-copy-color;
 }
 
@@ -36,7 +34,7 @@ Markup:
 	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
 </article>
 
-Styleguide 0.2.x
+Styleguide 0.3.38
 */
 article
 {
@@ -58,7 +56,7 @@ Markup:
 	</ul>
 </aside>
 
-Styleguide 0.2.x
+Styleguide 0.3.39
 */
 aside
 {
@@ -81,7 +79,7 @@ Markup:
 	</section>
 </section>
 
-Styleguide 0.2.x
+Styleguide 0.3.40
 */
 section
 {
@@ -98,7 +96,7 @@ Markup:
 	<h1>HTML5Doctor.com</h1>
 </header>
 
-Styleguide 0.2.x
+Styleguide 0.3.41
 */
 header
 {
@@ -115,7 +113,7 @@ Markup:
 	&copy; 2015 HTML5Doctor.com
 </footer>
 
-Styleguide 0.2.x
+Styleguide 0.3.42
 */
 footer
 {
@@ -132,7 +130,7 @@ Markup:
 	...
 </main>
 
-Styleguide 0.2.x
+Styleguide 0.3.43
 */
 main
 {
@@ -145,7 +143,7 @@ address
 The address element provides contact information for a document or part of a document. Information provided by address may include the names of the document’s maintainers, links to the maintainers’ Web pages, e-mail addresses for feedback, postal addresses, phone numbers, and so on. The address element is not appropriate for all postal and e-mail addresses; it should be reserved for providing such information about the contact people for the document. @see <a href="http://dev.w3.org/html5/spec/sections.html#the-address-element"><cite>W3C HTML5 specification</cite></a>
 
 Markup:
-he HTML5 Doctor is run by the following group of volunteers:
+The HTML5 Doctor is run by the following group of volunteers:
 <address>
 	<a href="http://html5doctor.com/author/jacko">Jack Osborne</a>,
 	<a href="http://html5doctor.com/author/richc">Rich Clark</a>,
@@ -156,7 +154,7 @@ he HTML5 Doctor is run by the following group of volunteers:
 	<a href="http://html5doctor.com/author/olib">Oli Studholme</a>
 </address>
 
-Styleguide 0.2.x
+Styleguide 0.3.44
 */
 address
 {

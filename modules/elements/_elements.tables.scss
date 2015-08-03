@@ -1,8 +1,20 @@
-// === Variables
+/*----------------------------------------------------------------------------*\
+  ...
+\*----------------------------------------------------------------------------*/
 $table-auto-border						:true !default;
 $table-auto-stripe						:true !default;
+$table-auto-hover						:true !default;
 
-// === Main
+$table-bg-color							:#fff !default;
+$table-bg-hover-color					:#ccc !default;
+$table-bg-accent-color					:#eee !default;
+
+$table-border-color						:#eee !default;
+
+
+/*----------------------------------------------------------------------------*\
+  Main
+\*----------------------------------------------------------------------------*/
 
 /*
 table
@@ -25,21 +37,21 @@ Markup:
 	</tr>
 </table>
 
-Styleguide 0.2.x
+Styleguide 0.3.45
 */
 table
 {
 	width 								:100%;
+	max-width							:100%;
 	border-spacing						:0;
 	border-collapse						:collapse;
 	text-align 							:left;
-	// TODO - this
-	//margin 								:0 0 $base-margin 0;
+	background-color					:$table-bg-color;
 }
 
 caption
 {
-
+	text-align							:left;
 }
 
 thead
@@ -64,7 +76,6 @@ tr
 
 th, td
 {
-	// TODO - this
 	padding 							:0 5px;
 }
 
@@ -99,12 +110,6 @@ td
 	vertical-align 						:top;
 }
 
-// cells that contain numbers should probably be right aligned, this helper does that...
-.cell-numerical
-{
-	text-align 							:right;
-}
-
 col
 {
 
@@ -115,15 +120,22 @@ colgroup
 
 }
 
+/*----------------------------------------------------------------------------*\
+  Classes
+\*----------------------------------------------------------------------------*/
+
 /**
- * Allow the ability to either set a border on all tables by default, or use a special class
- * to apply the borders.
+ * Allow the ability to either set a border on all tables by default, or use a
+ * special class to apply the borders.
  */
 @include wrap-if($table-auto-border == false, ".table--bordered")
 {
+	// TODO - this
+	//border 								:1px solid $table-border-color;
+
 	th, td
 	{
-		border 							:1px solid #eee;
+		border 							:1px solid $table-border-color;
 
 		&:empty
 		{
@@ -165,12 +177,31 @@ colgroup
 {
 	tbody
 	{
-		tr
+		> tr
 		{
 			&:nth-of-type(odd)
 			{
-				background-color 		:#eee;
+				background-color 		:$table-bg-accent-color;
 			}
 		}
 	}
+}
+
+@include wrap-if($table-auto-hover == false, ".table--hover")
+{
+	tbody
+	{
+		> tr
+		{
+			&:hover
+			{
+				background-color 		:$table-bg-hover-color;
+			}
+		}
+	}
+}
+
+.cell-numerical
+{
+	text-align 							:right;
 }

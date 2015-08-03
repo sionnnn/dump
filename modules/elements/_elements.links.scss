@@ -10,9 +10,9 @@ If the a element has an href attribute, then it represents a hyperlink (a hypert
 The target, rel, media, hreflang, and type attributes must be omitted if the href attribute is not present.
 
 Markup:
-<a href="http://html5doctor.com/author/jacko/">Jack Osborne</a>
+<a href="http://think.eu/">TH_NK</a>
 
-Styleguide 0.2.x
+Styleguide 0.3.36
 */
 a
 {
@@ -27,14 +27,5 @@ a
 	&:before, &:after
 	{
 		text-decoration			:none;
-	}
-
-	// TODO - link styles based on attributes
-	&[href*="mailto:"]
-	{
-		&:before
-		{
-		//	content				:"@";
-		}
 	}
 }

@@ -31,9 +31,18 @@ $fh-button-hover-font-color		:$fh-font-color !default;
 $fh-display						:block !default;
 $fh-placeholder-colour			:#7e7f80 !default;
 
-// === Main
+/*----------------------------------------------------------------------------*\
+  Main
+\*----------------------------------------------------------------------------*/
 
-input, textarea, select, option, optgroup, button, legend, fieldset
+input,
+textarea,
+select,
+option,
+optgroup,
+button,
+legend,
+fieldset
 {
 	outline						:none;
 	color						:$fh-font-color;
@@ -41,15 +50,32 @@ input, textarea, select, option, optgroup, button, legend, fieldset
 	display						:$fh-display;
 }
 
+input,
+button,
+select,
+textarea
+{
+	font-family					:inherit;
+	font-size					:inherit;
+	line-height					:inherit;
+}
+
+
 datalist
 {
 
 }
 
+/**
+ * 1. Chrome and Firefox set a `min-width: min-content;` on fieldsets,
+ *    so we reset that to ensure it behaves more like a standard block element.
+ */
 fieldset
 {
+	min-width					:0; /* 1 */
 	padding						:0;
 	border						:0;
+	margin						:0;
 }
 
 /*
@@ -75,12 +101,16 @@ Markup:
 	</fieldset>
 </form>
 
-Styleguide 0.2.x
+Styleguide 0.3.11
 */
 legend
 {
 	padding						:0;
 	font-weight					:inherit;
+	display						:block;
+	width						:100%;
+	border						:0;
+	line-height					:inherit;
 }
 
 /*
@@ -91,21 +121,48 @@ The label represents a caption in a user interface. The caption can be associate
 Markup:
 <label for="">Label</label>
 
-Styleguide 0.2.x
+Styleguide 0.3.12
 */
 label
 {
+	// Force IE8 to wrap long content
+	max-width					:100%;
 	display						:$fh-display;
 	position 					:relative;
 	vertical-align				:middle;
+	//margin-bottom				:5px;
+	font-weight					:600;
 
 	a
 	{
 		font-weight				:bold;
 	}
+
+	// Empty labels collapse automatically (not available in IE8)
+	&:empty
+	{
+		display					:none;
+	}
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="search"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="tel"], input[type="time"], input[type="url"], input[type="week"], input[list], input[type="file"], select, textarea
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="number"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[list],
+input[type="file"],
+select,
+textarea
 {
 	width						:$fh-input-width;
 	padding 					:$fh-input-padding;
@@ -113,7 +170,8 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
 	background-color			:$fh-input-bg-color;
 	border						:$fh-border-width $fh-border-style $fh-border-color;
 
-	&:active, &:focus
+	&:active,
+	&:focus
 	{
 		cursor 					:text;
 		outline 				:none;
@@ -143,13 +201,15 @@ The textarea element represents a multiline plain text edit control for the elem
 Markup:
 <textarea cols="10" rows="10"></textarea>
 
-Styleguide 0.2.x
+Styleguide 0.3.13
 */
 textarea
 {
 	-webkit-appearance			:none;
 	resize 						:vertical;
 	overflow 					:auto;
+	// Reset height for `textarea`s
+	height						:auto;
 }
 
 /*
@@ -160,11 +220,12 @@ Range Input
 Markup:
 <input type="range" />
 
-Styleguide 0.2.x
+Styleguide 0.3.14
 */
 input[type="range"]
 {
 	width						:$fh-input-width;
+	display						:block;
 	-webkit-appearance			:none;
 
 	$width:100%;
@@ -287,16 +348,23 @@ input[type="range"]
 
 input[type="file"]
 {
-
+	display						:block;
 }
 
+/*
+ * 1. Search inputs in iOS
+ *	  This overrides the extra rounded corners on search inputs in iOS so that
+ *	  our styles class can properly style them. Note that this cannot simply be
+ *	  added to `.form-control` as it's not specific enough
+ */
 input[type="search"]
 {
 	box-sizing					:border-box;
-	-webkit-appearance			:none;
+	-webkit-appearance			:none; /* 1 */
 }
 
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration
 {
 	-webkit-appearance			:none;
 }
@@ -318,7 +386,7 @@ Markup:
 	<option value="Other">Other</option>
 </select>
 
-Styleguide 0.2.x
+Styleguide 0.3.15
 */
 select
 {
@@ -335,8 +403,10 @@ select
 		padding 				:$fh-input-padding;
 	}
 
-	&[multiple]
+	&[multiple],
+	&[size]
 	{
+		// Make multiple select elements height not fixed
 		height					:auto;
 		padding					:0;
 
@@ -352,7 +422,11 @@ label, input, textarea, button, select, option
 	cursor 						:pointer;
 }
 
-button, input[type="button"], input[type="submit"], input[type="reset"], input[type="image"]
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="image"]
 {
 
 }
@@ -363,7 +437,28 @@ input[type="image"]
 	padding 					:$fh-input-padding;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="search"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="tel"], input[type="time"], input[type="url"], input[type="week"], input[list], input[type="file"], select, textarea, textarea, select, option, button
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="number"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[list],
+input[type="file"],
+select,
+textarea,
+textarea,
+select,
+option,
+button
 {
 	&[disabled]
 	{
@@ -383,9 +478,12 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
 	}
 }
 
-input[type="checkbox"], input[type="radio"]
+input[type="checkbox"],
+input[type="radio"]
 {
-	margin-right				:5px;
+	margin						:0 5px 0 0;
+	margin-top					:1px \9; // IE8-9
+	line-height					:normal;
 
 	// make sure that these always display inline - as they should be next to an input
 	display						:inline-block;
@@ -395,6 +493,8 @@ input[type="checkbox"], input[type="radio"]
 	{
 		width 					:auto;
 		display 				:inline-block;
+		margin-top				:0;
+		margin-bottom			:0;
 	}
 
 	&[disabled]
@@ -411,9 +511,13 @@ input[type="checkbox"], input[type="radio"]
 	}
 }
 
-button, input[type="button"], input[type="submit"], input[type="reset"]
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"]
 {
-	&:hover, &:focus
+	&:hover,
+	&:focus
 	{
 		background-color	 	:$fh-button-hover-bg-color;
 		color					:$fh-button-hover-font-color;
@@ -428,7 +532,7 @@ Represents the completion progress of a task. Progress may be either indetermina
 Markup:
 <p>Progress: <progress> <span>0</span>% </progress> </p>
 
-Styleguide 0.2.x
+Styleguide 0.3.16
 */
 progress
 {
@@ -475,7 +579,7 @@ When the element is wider than it is tall(or square), the depiction is expected 
 Markup:
 Your score is: <meter> 2 out of 10 </meter>
 
-Styleguide 0.2.x
+Styleguide 0.3.17
 */
 meter
 {
@@ -543,7 +647,8 @@ meter
 	}
 }
 
-input, textarea
+input,
+textarea
 {
 	@include placeholder
 	{
@@ -557,13 +662,49 @@ Color Input
 [Description for input element]
 
 Markup:
-...
+<input type="color" name="" id="field-55bf60767b2fb" class="" placeholder="Color Placeholder (required)" aria-required="true" required>
 
-Styleguide 0.2.x
+Styleguide 0.3.18
 */
 input[type="color"]
 {
 	padding 					:0;
 	width 						:auto;
 	min-width					:1.5rem;
+}
+
+/*
+output
+
+Represents the result of a calculation.
+The optional for attribute allows an explicit relationship to be made between the result of a calculation and the elements representing the values that influenced the calculation. If specified, the for attribute must contain a string consisting of an unordered set of unique, space-separated tokens, each of which must be the ID of an element in the same document.
+
+Markup:
+<form>
+	<label for="flying">Flying Skill Level</label>
+	<input name="flying-level" id="flying" type="range" min="0" max="250">
+	<output for="flying" onforminput="value = flying.valueAsNumber">0</output>
+</form>
+
+*/
+output
+{
+	display						:block;
+}
+
+/*
+keygen
+
+The keygen element represents a key pair generator control. When the control's form is submitted, the private key is stored in the local keystore, and the public key is packaged and sent to the server.
+
+Markup:
+<form action="/submit_key.php" method="post" enctype="multipart/form-data">
+	<keygen name="key">
+	<input type="submit" value="Submit">
+</form>
+
+*/
+keygen
+{
+
 }
