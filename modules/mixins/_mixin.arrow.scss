@@ -48,7 +48,7 @@
 		pointer-events: none;
 		border: solid rgba(#fff, 0);
 	}
-
+	/**
 	&:after
 	 {
 		border-color 							:rgba(#fff, 0);
@@ -85,4 +85,5 @@
 			margin-#{$edge-side-pos} 			:$edge-side-offset;
 		}
 	}
+	*/
 }
