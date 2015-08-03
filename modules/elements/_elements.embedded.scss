@@ -13,7 +13,7 @@ Markup:
 <img src="http://placehold.it/350x150" alt="Image served from placeholder service">
 <img src="/foo.jpg" alt="Sample text for a broken image">
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 img
 {
@@ -40,7 +40,7 @@ For iframe elements in HTML documents, the attribute, if present, must have a va
 Markup:
 <iframe height="500" width="500" src="http://google.com"></iframe>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 iframe
 {
@@ -59,7 +59,7 @@ The optional type attribute specifies the MIME type of the plugin to instantiate
 Markup:
 <embed src="movieclip.mov">
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 embed
 {
@@ -79,7 +79,7 @@ Markup:
 	<embed src="http://www.youtube.com/v/XZ5TajZYW6Y?fs=1&amp;hl=en_GB" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="390"></embed>
 </object>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 object
 {
@@ -102,7 +102,7 @@ Markup:
 	<a href="video.ogv">Download song</a>
 </video>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 video
 {
@@ -121,7 +121,7 @@ Markup:
 	<a href="music.oga">Download song</a>
 </audio>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 audio
 {
@@ -145,7 +145,7 @@ Markup:
 	Fallback content, in case the browser does not support Canvas.
 </canvas>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 canvas
 {
@@ -162,7 +162,7 @@ Markup:
 	<track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
 </video>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 track
 {
@@ -177,7 +177,7 @@ The map element, in conjunction with any area element descendants, defines an im
 Markup:
 ...
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 map
 {
@@ -193,7 +193,7 @@ If the area element has no href attribute, then the area represented by the elem
 Markup:
 ...
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 area
 {

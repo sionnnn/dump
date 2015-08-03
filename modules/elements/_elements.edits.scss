@@ -8,10 +8,9 @@ del
 DEL
 The del element represents a removal from the document. Thedel elements should not cross implied paragraph boundaries
 
-Markup:
-<p>My favourite colour is <del datetime="2010-10-11T01:25-07:00">blue</del> <ins datetime="2010-10-11T01:25-07:01">red</ins>, but I also like green and yellow.</p>
+Markup: <del>del</del>
 
-Styleguide 0.x
+Styleguide 0.3.1
 */
 del
 {
@@ -26,7 +25,7 @@ The ins element represents an addition to the document. The ins elements should 
 Markup:
 <p>My favourite colour is <del datetime="2010-10-11T01:25-07:00">blue</del> <ins datetime="2010-10-11T01:25-07:01">red</ins>, but I also like green and yellow.</p>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 ins
 {

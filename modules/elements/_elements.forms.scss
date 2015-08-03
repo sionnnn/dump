@@ -75,7 +75,7 @@ Markup:
 	</fieldset>
 </form>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 legend
 {
@@ -91,7 +91,7 @@ The label represents a caption in a user interface. The caption can be associate
 Markup:
 <label for="">Label</label>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 label
 {
@@ -143,7 +143,7 @@ The textarea element represents a multiline plain text edit control for the elem
 Markup:
 <textarea cols="10" rows="10"></textarea>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 textarea
 {
@@ -160,7 +160,7 @@ Range Input
 Markup:
 <input type="range" />
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 input[type="range"]
 {
@@ -318,7 +318,7 @@ Markup:
 	<option value="Other">Other</option>
 </select>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 select
 {
@@ -428,7 +428,7 @@ Represents the completion progress of a task. Progress may be either indetermina
 Markup:
 <p>Progress: <progress> <span>0</span>% </progress> </p>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 progress
 {
@@ -475,7 +475,7 @@ When the element is wider than it is tall(or square), the depiction is expected 
 Markup:
 Your score is: <meter> 2 out of 10 </meter>
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 meter
 {
@@ -559,7 +559,7 @@ Color Input
 Markup:
 ...
 
-Styleguide 0.x
+Styleguide 0.2.x
 */
 input[type="color"]
 {
