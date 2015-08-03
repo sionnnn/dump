@@ -4,10 +4,6 @@ Utility
 Styleguide 0.8
 */
 
-// === Variables
-
-// === Main
-
 // ARIA
 // http://w3c.github.io/html-reference/aria/aria.html
 
@@ -21,9 +17,7 @@ Styleguide 0.8
 /*
 List
 
-[Description for list class]
-
-list--inline	 - [Modifier description]
+list--inline	 - an inline list
 
 Markup:
 <ul class="list {$modifiers}">
@@ -32,8 +26,9 @@ Markup:
 	<li>list item</li>
 </ul>
 
-Styleguide 0.x
+Styleguide 0.8.1
 */
+
 .list
 {
 	margin 					:0;
