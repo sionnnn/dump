@@ -250,15 +250,15 @@ module.exports = yeoman.generators.Base.extend({
                                             this.watchersFeatures = answers.modules;
                                         
                                             //get remote data and copy to root
-                                            this.remote('sionnnn', 'fink', function(err, remote) {
-                                        
+                                            this.remote('sionnnn', 'fink','master', function(err, remote) {
+                                                
                                                 ncp(remote.cachePath,this.destinationPath(),function(err){
                                                     done();
                                                 });
                                                 //move to next step
                                                 
                                                
-                                            }.bind(this));
+                                            }.bind(this),true);
                                 
                                         }.bind(this))
                                         
