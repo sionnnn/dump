@@ -1,3 +1,12 @@
+/*
+Contrasted
+
+contrasted($background-color, $dark:$contrasted-dark-default, $light:$contrasted-light-default)
+
+Styleguide 0.5.4
+*/
+
+
 @mixin contrasted($background-color, $dark:$contrasted-dark-default, $light:$contrasted-light-default)
 {
 	background-color			:$background-color;
