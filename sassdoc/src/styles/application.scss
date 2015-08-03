@@ -1,0 +1,37 @@
+////
+/// This is a poster comment.
+/// It will apply annotations to all items from file.
+/// @group API
+/// @author Hugo Giraudel
+////
+
+/// This item will have:
+/// `@group API` and `@author Hugo Giraudel`
+/// inherited from the poster.
+@function dummy-function() {
+  // ...
+}
+
+/// This item overrides the `@author` annotation
+/// from the poster; it's not merged with it.
+/// @author Fabrice Weinberg
+@mixin dummy-mixin {
+  // ...
+}
+
+/// Baseline for all margins and gaps on the site
+/// @group configuration
+/// @access public
+/// @type Number
+$baseline: 1.5em;
+
+/// Centre a block to make it a container
+/// @group helpers
+/// @param {Number} $max-width - Max width for the container
+/// @require $baseline
+/// @output 'max-width', 'margin' and 'width'
+    @mixin center($max-width: 1170px) {
+      max-width: $max-width;
+      margin: 0 auto $baseline;
+      width: 100%;
+    }
