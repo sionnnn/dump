@@ -13,26 +13,32 @@ var gruntPackageLookup = {
 	"bower-install-simple":["bower","grunt-bower-install-simple"],
 	"modernizr":["grunt-modernizr"],
 	"copy":["grunt-contrib-copy"],
+
 	"newer:browserify:babel":["grunt-browserify","babelify","grunt-babel"],
 	"newer:jscs":["grunt-jscs"],
 	"newer:eslint":["grunt-eslint"],
 	"newer:uglify":["grunt-contrib-uglify"],
+
 	"sass":["grunt-sass"],
 	"newer:sass-convert":["grunt-sass-convert"],
 	"newer:csslint":["grunt-contrib-csslint"],
 	"newer:postcss":["grunt-postcss","autoprefixer-core"],
 	"newer:stripmq":["grunt-stripmq"],
 	"newer:cssmin":["grunt-contrib-cssmin"],
+
 	"newer:zetzer":["grunt-zetzer"],
 	"wiredep":["grunt-wiredep"],
 	"newer:htmlhintplus":["grunt-htmlhint-plus"],
+
 	"real_favicon":["grunt-real-favicon"],
 	"svgmin:icons":["grunt-svgmin"],
 	"grunticon:build":["grunt-grunticon"],
+
 	"newer:imagemin":["grunt-contrib-imagemin"],
 	"newer:webp":["webp-bin","grunt-webp"],
+
 	"newer:jsdoc":["grunt-jsdoc"],
-	"exec:styleguide":["grunt-exec","gulp","gulp-sass","sc5-styleguide"],
+	"exec:styleguide":["grunt-exec","gulp","gulp-sass","sc5-styleguide","sassdoc"],
 	"newer:phantomas":["phantomas","grunt-phantomas"]
 }
 
@@ -285,7 +291,11 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   writing: function(){
-      
+              
+      var packageFile = htmlwiring.readFileAsString('package.generate.json');
+      packageFile = packageFile.replace("F_NK",this.projectName);
+      htmlwiring.writeFileFromString(packageFile,'package.json');
+
       var _this = this;
       
       function htmlHintPlusIncluded(){
@@ -392,10 +402,7 @@ module.exports = yeoman.generators.Base.extend({
             fs.writeFile("grunt_tasks.json", JSON.stringify(_this.tasksData, null, 2), function(err) {
             })
         })
-        
-        var packageFile = htmlwiring.readFileAsString('package.json');
-        packageFile = packageFile.replace("F_NK",this.projectName);
-        htmlwiring.writeFileFromString(packageFile,'package.json')
+
   },
 
   install: function () {
