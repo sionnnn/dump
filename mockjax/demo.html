@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mockjax</title>
+</head>
+<body>
+    <div class="ret"></div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="mockjax.js"></script>
+
+    <script>
+        $(document).ready(function (e) {
+
+            function renderDriver(driver){
+                $('.ret').append('<h1>' + driver.givenName + ' ' + driver.familyName + '</h1>');
+            }
+
+            function getDriver(drivername){
+
+                //this mockjax call would probably sit in a separate file, included only for dev, so it doesn't sit inside production code.
+                $.mockjax({
+                    url: "http://ergast.com/api/f1/drivers/*",
+                    // response: function(options){ //create dynamic fake data in the response function
+                    //     //do randomising data stuff
+                    //     //can use the options like: options.url so we can then pull parameters from the url
+                    //     this.responseText = fakedData;
+                    // },
+                    status: 200, //set to 500 to test error result, see also statusText
+                    //contentType: "application/json",
+                    responseTime: [250, 750], //randomise latency between these two values
+                    //responseText: fakeData, //inline data instead of using a proxy
+                    proxy: "mock.json", //use this file as the test
+                    //isTimeout: true, //simulate a server timeout
+                    onAfterComplete: function() {
+                        //cleanup etc, also see onAfterSuccess and onAfterError
+                    }
+                });
+
+                $.ajax({
+                    url: "http://ergast.com/api/f1/drivers/" + drivername + ".json",
+                    dataType: 'json',
+                    success: function(data){
+                        var driver = data.MRData.DriverTable.Drivers[0];
+                        renderDriver(driver);
+                    },
+                    error: function(e){
+                        console.log(e);
+                    }
+                });
+
+                //reset
+                $.mockjax.clear();
+
+            }
+
+            getDriver('alonso');
+        });
+
+    </script>
+</body>
+</html>
