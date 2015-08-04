@@ -1,5 +1,13 @@
-
-@function _em($px, $base: $base-font-size)
+/// ...
+/// @param {Number} $px - ...
+/// @param {Number} $base - ...
+/// @group framework
+/// @author Michael Ord
+@function _em
+(
+    $px,
+    $base: $base-font-size
+)
 {
 	@if($px == auto)
 	{
@@ -24,7 +32,16 @@
 	@return ($px / $base) * 1em;
 }
 
-@function em($settings, $base: $base-font-size)
+/// ...
+/// @param {Number} $settings - ...
+/// @param {Number} $base - ...
+/// @group framework
+/// @author Michael Ord
+@function em
+(
+    $settings,
+    $base: $base-font-size
+)
 {
 	$output: '';
 	$counter: 0;

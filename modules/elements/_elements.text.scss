@@ -1,19 +1,12 @@
-/*----------------------------------------------------------------------------*\
-  ...
-\*----------------------------------------------------------------------------*/
 $base-small-print-size			:85% !default;
 $mark-background-color			:#f9f9a6 !default;
-
-/*----------------------------------------------------------------------------*\
-  Main
-\*----------------------------------------------------------------------------*/
 
 code,
 kbd,
 pre,
 samp
 {
-
+	font-family 				:$base-mono-font-family;
 }
 
 /*
@@ -269,7 +262,11 @@ Styleguide 0.3.60
 code
 {
 	white-space 				:pre;
-	font-family 				:monospace;
+	padding						:2px 4px;
+	font-size					:90%;
+	color						:$code-color;
+	background-color			:$code-bg;
+	border-radius				:$border-radius-base;
 }
 
 /*
@@ -286,7 +283,20 @@ Styleguide 0.3.61
 */
 kbd
 {
+	padding				:2px 4px;
+	font-size			:90%;
+	color				:$kbd-color;
+	background-color	:$kbd-bg;
+	border-radius		:$border-radius-small;
+	box-shadow			:inset 0 -1px 0 rgba(0,0,0,.25);
 
+	kbd
+	{
+		padding			:0;
+		font-size		:100%;
+		font-weight		:bold;
+		box-shadow		:none;
+	}
 }
 
 /*
@@ -339,6 +349,7 @@ mark
 	padding 					:2px 4px;
 	display 					:inline;
 	background-color			:$mark-background-color;
+	border-radius				:$border-radius-small;
 }
 
 /*

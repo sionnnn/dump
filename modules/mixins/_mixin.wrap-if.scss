@@ -1,11 +1,6 @@
-/*
-Wrap if
-
-wrap-if($boolean, $selector)
-
-Styleguide 0.5.10
-*/
-
+/// ...
+/// @group framework
+/// @author Michael Ord
 @mixin wrap-if($boolean, $selector)
 {
 	@if($boolean)

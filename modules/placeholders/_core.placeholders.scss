@@ -4,6 +4,15 @@ Placeholders
 Styleguide 0.7
 */
 
+%tab-focus
+{
+	outline						:thin dotted;
+	// WebKit
+	outline						:5px auto -webkit-focus-ring-color;
+	outline-offset				:-2px;
+}
+
+
 %core-breakword
 {
 	word-wrap 					:break-word;
@@ -186,24 +195,6 @@ Styleguide 0.7
 {
 	border-radius 			:100%;
 }
-
-// limit the line length of the element to the maximum allowed line length defined in the settings
-//%limit-line-length
-//{
-//	@if($max-line-length)
-//	{
-//		max-width			:$max-line-length;
-//	}
-//}
-
-// remove the max width on an element
-//%unlimit-line-length
-//{
-//	@if($max-line-length)
-//	{
-//		max-width			:none;
-//	}
-//}
 
 %cover-absolute
 {

@@ -1,5 +1,13 @@
-
-@function percent-to-readable($percent, $prefix:"")
+/// Return...
+/// @param {Number} $percent - ...
+/// @param {Number} $prefix - ...
+/// @group framework
+/// @author Michael Ord
+@function percent-to-readable
+(
+    $percent,
+    $prefix:""
+)
 {
 	$rounded-width			:floor($percent);
 	$readable				:false;

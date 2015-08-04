@@ -1,4 +1,12 @@
-@function black($opacity)
+
+/// ...
+/// @param {Number} $opacity - ...
+/// @group framework
+/// @author Michael Ord
+@function black
+(
+    $opacity
+)
 {
 	@return rgba(0, 0, 0, $opacity);
 }

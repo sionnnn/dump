@@ -1,4 +1,12 @@
-@function brightness($color)
+
+/// ...
+/// @param {Number} $color - ...
+/// @group framework
+/// @author Michael Ord
+@function brightness
+(
+    $color
+)
 {
 	$sum						:red($color) + green($color) + blue($color);
 

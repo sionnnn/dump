@@ -1,11 +1,6 @@
-/*
-Size
-
-size($width, $height:$width)
-
-Styleguide 0.5.9
-*/
-
+/// ...
+/// @group framework
+/// @author Michael Ord
 @mixin size($width, $height:$width)
 {
 	width 			:$width;

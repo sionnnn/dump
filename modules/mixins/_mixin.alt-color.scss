@@ -1,11 +1,6 @@
-/*
-Alt color
-
-alt-color()
-
-Styleguide 0.5.1
-*/
-
+/// ...
+/// @group framework
+/// @author Michael Ord
 @mixin alt-color()
 {
 	@if($alt-colour-classnamne)

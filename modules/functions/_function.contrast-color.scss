@@ -1,4 +1,15 @@
-@function contrast-color($color, $dark:$contrasted-dark-default, $light:$contrasted-light-default)
+/// ...
+/// @param {Number} $color - ...
+/// @param {Number} $dark - ...
+/// @param {Number} $light - ...
+/// @group framework
+/// @author Michael Ord
+@function contrast-color
+(
+    $color,
+    $dark:$contrasted-dark-default,
+    $light:$contrasted-light-default
+)
 {
 	@if ($color == null)
 	{

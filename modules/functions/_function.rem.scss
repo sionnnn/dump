@@ -1,5 +1,11 @@
-
-@function _rem($px)
+/// Return...
+/// @param {Number} $px - ...
+/// @group framework
+/// @author Michael Ord
+@function _rem
+(
+    $px
+)
 {
 	@if($px == auto)
 	{
@@ -24,7 +30,14 @@
 	@return ($px / $base) * 1rem;
 }
 
-@function rem($size)
+/// Return...
+/// @param {Number} $size - ...
+/// @group framework
+/// @author Michael Ord
+@function rem
+(
+    $size
+)
 {
 	$output 		:'';
 	$counter 		:0;

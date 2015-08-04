@@ -1,7 +1,6 @@
-// === Variables
-$core-anchor-color 				:$clr-primary !default;
-
-// === Main
+$link-color 					:$clr-primary !default;
+$link-hover-color 				:green !default;
+$link-hover-decoration			:underline !default;
 
 /*
 a
@@ -16,16 +15,33 @@ Styleguide 0.3.36
 */
 a
 {
-	color 						:$core-anchor-color;
+	color 						:$link-color;
 	text-decoration 			:none;
 
-	&:hover, &:focus
+	&:hover,
+	&:focus
 	{
-		text-decoration 		:underline;
+		color					:$link-hover-color;
+		text-decoration 		:$link-hover-decoration;
 	}
 
-	&:before, &:after
+	&:focus
+	{
+		@extend %tab-focus;
+	}
+
+	&:before,
+	&:after
 	{
 		text-decoration			:none;
+	}
+
+	// TODO - link styles based on attributes
+	&[href*="mailto:"]
+	{
+		&:before
+		{
+		//	content				:"@";
+		}
 	}
 }

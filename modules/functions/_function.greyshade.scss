@@ -1,4 +1,11 @@
-@function greyshade($integer: 4)
+/// Return...
+/// @param {Number} $integer - ...
+/// @group framework
+/// @author Michael Ord
+@function greyshade
+(
+    $integer: 4
+)
 {
 	@if($integer > 10)
 	{

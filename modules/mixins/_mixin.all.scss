@@ -1,11 +1,7 @@
-/*
-Mixins
-
-Styleguide 0.5
-*/
-
+/*----------------------------------------------------------------------------*\
+  ...
+\*----------------------------------------------------------------------------*/
 @import "mixin.alt-color",
-		"mixin.arrow",
 		"mixin.clearfix",
 		"mixin.contrasted",
 		"mixin.dropcap",
@@ -13,4 +9,5 @@ Styleguide 0.5
 		//"mixin.mq",
 		"mixin.placeholder",
 		"mixin.size",
+		"mixin.rhythm",
 		"mixin.wrap-if";

@@ -1,4 +1,11 @@
-@function strip-units($val)
+/// Return...
+/// @param {Number} $val - ...
+/// @group framework
+/// @author Michael Ord
+@function strip-units
+(
+    $val
+)
 {
 	@return ($val / ($val * 0 + 1));
 }

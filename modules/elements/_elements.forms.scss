@@ -1,4 +1,3 @@
-// === Variables
 $fh-font-color					:$core-body-copy-color !default;
 
 $fh-invalid-border-color		:$clr-danger !default;
@@ -30,10 +29,6 @@ $fh-button-hover-font-color		:$fh-font-color !default;
 
 $fh-display						:block !default;
 $fh-placeholder-colour			:#7e7f80 !default;
-
-/*----------------------------------------------------------------------------*\
-  Main
-\*----------------------------------------------------------------------------*/
 
 input,
 textarea,
@@ -169,6 +164,11 @@ textarea
 	border-radius				:$fh-border-radius;
 	background-color			:$fh-input-bg-color;
 	border						:$fh-border-width $fh-border-style $fh-border-color;
+	box-shadow					:inset 0 1px 1px rgba(0, 0, 0, .075);
+	transition					:border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	// Reset unusual Firefox-on-Android default style;
+	// see https://github.com/necolas/normalize.css/issues/214
+	background-image			:none;
 
 	&:active,
 	&:focus
@@ -188,7 +188,67 @@ input[aria-invalid="false"]
 	border-color				:$fh-valid-border-color;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="search"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="tel"], input[type="time"], input[type="url"], input[type="week"], input[list]
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]
+{
+	// Unstyle the caret on `<select>`s in IE10+.
+	&::-ms-expand
+	{
+		border					:0;
+		background-color		:transparent;
+	}
+
+	// Disabled and read-only inputs
+	//
+	// HTML5 says that controls under a fieldset > legend:first-child won't be
+	// disabled if the fieldset is disabled. Due to implementation difficulty, we
+	// don't honor that edge case; we style them as disabled anyway.
+	&[disabled],
+	&[readonly],
+	fieldset[disabled] &
+	{
+		// TODO - style this
+		//background-color		:@input-bg-disabled;
+		// iOS fix for unreadable disabled content;
+		opacity					:1;
+	}
+
+	&[disabled],
+	fieldset[disabled] &
+	{
+		cursor					:$cursor-disabled;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="number"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[list]
 {
 	-webkit-appearance			:none;
 }
@@ -462,7 +522,7 @@ button
 {
 	&[disabled]
 	{
-		cursor					:not-allowed;
+		cursor					:$cursor-disabled;
 	}
 
 	&:hover
@@ -501,7 +561,7 @@ input[type="radio"]
 	{
 		+ label
 		{
-			cursor				:not-allowed;
+			cursor				:$cursor-disabled;
 		}
 	}
 
@@ -519,8 +579,8 @@ input[type="reset"]
 	&:hover,
 	&:focus
 	{
-		background-color	 	:$fh-button-hover-bg-color;
-		color					:$fh-button-hover-font-color;
+		//background-color	 	:$fh-button-hover-bg-color;
+		//color					:$fh-button-hover-font-color;
 	}
 }
 
@@ -686,6 +746,7 @@ Markup:
 	<output for="flying" onforminput="value = flying.valueAsNumber">0</output>
 </form>
 
+Styleguide 0.0.x
 */
 output
 {
@@ -703,6 +764,7 @@ Markup:
 	<input type="submit" value="Submit">
 </form>
 
+Styleguide 0.0.x
 */
 keygen
 {
