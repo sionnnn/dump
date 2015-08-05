@@ -30,7 +30,8 @@
   "devDependencies": {
     "html-wiring": "^1.2.0",
     "mocha": "*",
-    "ncp": "^2.0.0"
+    "ncp": "^2.0.0",
+    "thinksay": "^1.0.5"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
